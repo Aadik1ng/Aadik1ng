@@ -1,4 +1,3 @@
-
 <!-- Dark Theme Header -->
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=AADITYA&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35" width="100%"/>
