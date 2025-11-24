@@ -1,11 +1,11 @@
 <!-- Dark Theme Header -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=AADITYA&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=200&section=header&text=AADITYA&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35" width="100%"/>
 </div>
 
 <!-- Matrix Style Typing Animation -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=00FF41&background=000000&center=true&vCenter=true&width=700&height=60&lines=root%40aaditya%3A~%24+whoami;AI%2FML+Engineer+%7C+Backend+Developer;FastAPI+%7C+PyTorch+%7C+Hugging+Face;Building+intelligent+systems+with+Python;%3E+Training+models...+%5B%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%5D+100%25" alt="Matrix Typing"/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=00FF41&background=000000&center=true&vCenter=true&width=700&height=60&lines=root%40aaditya%3A~%24+whoami;AI%2FML+Engineer+%7C+Backend+Developer;FastAPI+%7C+PyTorch+%7C+Hugging+Face;Building+intelligent+systems+with+Python;Orchestrating+Multi-Agent+Workflows;%3E+Training+models...+%5B%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%5D+100%25" alt="Matrix Typing"/>
 </div>
 
 <!-- Neural Network Visualization -->
@@ -44,16 +44,64 @@
           🧠 Backend Developer with FastAPI & distributed systems<br>
           ⚡ Building RAG systems, STT pipelines & face recognition<br>
           🎯 Open Source contributor & MLOps enthusiast<br>
-          🌟 Python-first developer with Go & C++ expertise
+          🌟 Python-first developer with Go & C++ expertise<br>
+          🤖 Architecting autonomous multi-agent systems
         </p>
       </td>
     </tr>
   </table>
 </div>
 
+<!-- 🆕 AGENTIC AI SECTION -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20&height=3&section=header" width="100%"/>
+  <br>
+  
+  <h2>
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjh6YWY3Y2M1NW93NzB5YnN5NWZvbDRsZjl3aTc5bnI1OGthZGRsOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QssGEmpkyEOhBCb7e1/giphy.gif" width="35">
+    <span style="color: #FF6B6B;">Agentic AI & Autonomous Systems</span>
+  </h2>
+  
+  <p align="center" style="color: #F0F6FC;">
+    <i>Building intelligent agents that can reason, plan, and execute complex workflows autonomously</i>
+  </p>
+  
+  <table>
+    <tr>
+      <td align="center" width="140">
+        <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white&labelColor=000000" alt="LangGraph"/>
+        <br><b style="color: #4ECDC4;">LangGraph</b>
+        <br><sub>Stateful Multi-Agent<br>Orchestration</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://img.shields.io/badge/CrewAI-FF6B6B?style=for-the-badge&logo=robot&logoColor=white&labelColor=000000" alt="CrewAI"/>
+        <br><b style="color: #4ECDC4;">CrewAI</b>
+        <br><sub>Role-Based Agent<br>Collaboration</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://img.shields.io/badge/AutoGen-0078D4?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=000000" alt="AutoGen"/>
+        <br><b style="color: #4ECDC4;">AutoGen</b>
+        <br><sub>Conversational<br>Agent Framework</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://img.shields.io/badge/dLLM-9B59B6?style=for-the-badge&logo=pytorch&logoColor=white&labelColor=000000" alt="dLLM"/>
+        <br><b style="color: #4ECDC4;">dLLM</b>
+        <br><sub>Diffusion Language<br>Modeling</sub>
+      </td>
+    </tr>
+  </table>
+  
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20&height=3&section=footer" width="100%"/>
+</div>
+
 <!-- Programming Languages Section -->
 <div align="center">
-  <h2 style="color: #FF6B6B;">🖥️ Programming Languages</h2>
+  <br>
+  <h2 style="color: #FF6B6B;">
+    <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35">
+    🖥️ Programming Languages
+  </h2>
   
   <table>
     <tr>
@@ -88,7 +136,11 @@
 
 <!-- Backend & APIs Section -->
 <div align="center">
-  <h2 style="color: #4ECDC4;">🚀 Backend & APIs</h2>
+  <br>
+  <h2 style="color: #4ECDC4;">
+    <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="35">
+    🚀 Backend & APIs
+  </h2>
   
   <table>
     <tr>
@@ -118,7 +170,11 @@
 
 <!-- AI/ML/NLP Section -->
 <div align="center">
-  <h2 style="color: #45B7D1;">🧠 AI/ML/NLP Stack</h2>
+  <br>
+  <h2 style="color: #45B7D1;">
+    <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="35">
+    🧠 AI/ML/NLP Stack
+  </h2>
   
   <table>
     <tr>
@@ -156,9 +212,9 @@
   </p>
 </div>
 
-
 <!-- MLOps & Data Section -->
 <div align="center">
+  <br>
   <h2 style="color: #4ECDC4;">🔧 MLOps & Data Management</h2>
   
   <table>
@@ -189,6 +245,7 @@
 
 <!-- Databases Section -->
 <div align="center">
+  <br>
   <h2 style="color: #45B7D1;">🗃️ Databases & Storage</h2>
   
   <table>
@@ -219,6 +276,7 @@
 
 <!-- DevOps & Cloud Section -->
 <div align="center">
+  <br>
   <h2 style="color: #FF6B6B;">☁️ DevOps & Infrastructure</h2>
   
   <table>
@@ -249,6 +307,7 @@
 
 <!-- UI & Visualization Section -->
 <div align="center">
+  <br>
   <h2 style="color: #4ECDC4;">🌐 UI & Data Visualization</h2>
   
   <table>
@@ -279,39 +338,55 @@
 
 <!-- Featured Projects Section -->
 <div align="center">
-  <h2 style="color: #45B7D1;">🚀 Featured Projects</h2>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,12,20&height=3&section=header" width="100%"/>
+  <br>
+  <h2 style="color: #45B7D1;">
+    <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="35">
+    🚀 Featured Projects
+  </h2>
   
   <table>
     <tr>
-      <td width="50%">
-        <h3>🔍 Semantic Search Engine</h3>
-        <p>BERT + FAISS implementation with ~90% domain accuracy</p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/CLIP-FF6B6B?style=for-the-badge&logo=openai&logoColor=white"/>
-        <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+      <td width="50%" valign="top">
+        <h3>🤖 Multi-Agent Knowledge Graph Builder</h3>
+        <p>Production-ready multi-agent pipeline with 4 specialized agents (Entity, Fetch, KnowledgeDB, Judge) that extracts entities, fetches real-time web context, constructs knowledge graphs in Neo4j, and produces executive summaries</p>
+        <p><b>⚡ 5-10x faster with intelligent caching | 70-90% cache hit rate</b></p>
+        <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Groq-FF6B6B?style=for-the-badge&logo=ai&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"/>
       </td>
-      <td width="50%">
-        <h3>🎤 Hinglish STT Pipeline</h3>
-        <p>Real-time speech transcription with Whisper & WebSockets</p>
+      <td width="50%" valign="top">
+        <h3>🎯 Marketing Multi-Agent System</h3>
+        <p>Comprehensive AI marketing automation with 3 specialized agents (Lead Triage, Engagement, Campaign Optimization) featuring multi-layer memory (short-term, long-term, episodic, semantic) and 18 synthetic datasets for training</p>
+        <p><b>🧠 Adaptive memory | A/B testing | Predictive modeling</b></p>
+        <img src="https://img.shields.io/badge/Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
         <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Whisper-412991?style=for-the-badge&logo=openai&logoColor=white"/>
-        <img src="https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white"/>
+        <img src="https://img.shields.io/badge/RandomForest-FF6B6B?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
       </td>
     </tr>
     <tr>
-      <td width="50%">
-        <h3>📚 Document RAG System</h3>
-        <p>LLaMA2 + LangChain for intelligent document Q&A</p>
-        <img src="https://img.shields.io/badge/LangChain-121212?style=for-the-badge&logo=chainlink&logoColor=white"/>
-        <img src="https://img.shields.io/badge/LLaMA2-4285F4?style=for-the-badge&logo=meta&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/>
+      <td width="50%" valign="top">
+        <h3>📞 Sales Call AI Analysis System</h3>
+        <p>Production-ready FastAPI system powered by Claude 3.5 Sonnet that analyzes sales call transcripts with section-based processing (Opening, Pitch, Objections, Closing) and multi-criteria scoring for conversion prediction</p>
+        <p><b>🎯 5 scoring dimensions | 100% test success rate | 95%+ section accuracy</b></p>
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Claude_3.5-7C3AED?style=for-the-badge&logo=anthropic&logoColor=white"/>
+        <img src="https://img.shields.io/badge/OpenRouter-FF6B6B?style=for-the-badge&logo=ai&logoColor=white"/>
       </td>
-      <td width="50%">
-        <h3>👤 Real-time Face Recognition</h3>
-        <p>InsightFace + InceptionResNetV1 for live detection</p>
-        <img src="https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=opencv&logoColor=white"/>
-        <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
-        <img src="https://img.shields.io/badge/RTSP-FF4B4B?style=for-the-badge&logo=python&logoColor=white"/>
+      <td width="50%" valign="top">
+        <h3>🔄 More Projects Coming Soon...</h3>
+        <p>Actively building:</p>
+        <ul align="left">
+          <li>🎤 Hinglish STT Pipeline with Whisper & WebSockets</li>
+          <li>🔍 BERT + FAISS Semantic Search Engine</li>
+          <li>👤 Real-time Face Recognition with InsightFace</li>
+          <li>📚 Document RAG System with LLaMA2 & LangChain</li>
+        </ul>
+        <img src="https://img.shields.io/badge/Whisper-412991?style=for-the-badge&logo=openai&logoColor=white"/>
+        <img src="https://img.shields.io/badge/BERT-FF6B6B?style=for-the-badge&logo=huggingface&logoColor=white"/>
+        <img src="https://img.shields.io/badge/LLaMA2-4285F4?style=for-the-badge&logo=meta&logoColor=white"/>
       </td>
     </tr>
   </table>
@@ -319,7 +394,13 @@
 
 <!-- GitHub Stats -->
 <div align="center">
-  <h2 style="color: #FF6B6B;">📊 GitHub Analytics</h2>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,12,20&height=3&section=header" width="100%"/>
+  <br>
+  <h2 style="color: #FF6B6B;">
+    <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35">
+    📊 GitHub Analytics
+  </h2>
   
   <table>
     <tr>
@@ -342,7 +423,11 @@
 
 <!-- Connect Section -->
 <div align="center">
-  <h2 style="color: #4ECDC4;">🌐 Connect With Me</h2>
+  <br>
+  <h2 style="color: #4ECDC4;">
+    <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="35">
+    🌐 Connect With Me
+  </h2>
   
   <a href="https://www.linkedin.com/in/aaditya-a-b95254214" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
@@ -357,11 +442,11 @@
 
 <!-- Activity Graph -->
 <div align="center">
+  <br>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=aadik1ng&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=FF6B6B&line=4ECDC4&point=45B7D1" width="100%" alt="Activity Graph"/>
 </div>
 
 <!-- Footer -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF6B6B,50:4ECDC4,100:45B7D1&height=120&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=fff&animation=fadeIn&fontAlignY=70" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=120&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=fff&animation=fadeIn&fontAlignY=70" width="100%"/>
 </div>
-
