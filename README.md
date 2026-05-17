@@ -1,452 +1,232 @@
-<!-- Dark Theme Header -->
+# ⚡ AADITYA AARYAN
+
+### AI/ML Engineer · Backend Developer · Agentic AI Builder
+
+Building production-ready AI systems. **LLMs · RAG · Multi-Agent Workflows · Computer Vision · Real-Time STT · FastAPI**
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=200&section=header&text=AADITYA&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35" width="100%"/>
+  <a href="https://github.com/Aadik1ng"><img src="https://img.shields.io/badge/GitHub-Aadik1ng-00FF41?style=flat-square&logo=github" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/aaditya-a-b95254214"><img src="https://img.shields.io/badge/LinkedIn-Aaditya%20Aaryan-00D9FF?style=flat-square&logo=linkedin" alt="LinkedIn" /></a>
+  <a href="mailto:aadityaaryan639@gmail.com"><img src="https://img.shields.io/badge/Email-aadityaaryan639-FF006E?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://www.leetcode.com/aadik1ng"><img src="https://img.shields.io/badge/LeetCode-aadik1ng-FFB700?style=flat-square&logo=leetcode" alt="LeetCode" /></a>
+  <a href="https://github.com/Aadik1ng?tab=followers"><img src="https://komarev.com/ghpvc/?username=Aadik1ng&style=flat-square&color=00FF41" alt="Views" /></a>
 </div>
 
-<!-- Matrix Style Typing Animation -->
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=00FF41&background=000000&center=true&vCenter=true&width=700&height=60&lines=root%40aaditya%3A~%24+whoami;AI%2FML+Engineer+%7C+Backend+Developer;FastAPI+%7C+PyTorch+%7C+Hugging+Face;Building+intelligent+systems+with+Python;Orchestrating+Multi-Agent+Workflows;%3E+Training+models...+%5B%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%5D+100%25" alt="Matrix Typing"/>
-</div>
+---
 
-<!-- Neural Network Visualization -->
-<div align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png" width="100%"/>
-  <br>
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="400" alt="Neural Network"/>
-  <br>
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png" width="100%"/>
-</div>
+## 🎯 Core Domains
 
-<!-- Profile Stats with Dark Theme -->
-<div align="center" style="margin: 20px 0;">
-  <img src="https://komarev.com/ghpvc/?username=aadik1ng&style=for-the-badge&color=red&labelColor=black" alt="Profile Views"/>
-  <img src="https://img.shields.io/github/followers/aadik1ng?style=for-the-badge&color=red&labelColor=black" alt="Followers"/>
-</div>
+| 🧠 **LLMs & Agents** | ⚙️ **Backend** | 📊 **Data** | 👁️ **Real-Time AI** |
+|---|---|---|---|
+| Multi-agent · RAG · GraphRAG | FastAPI · WebSockets · Microservices | PostgreSQL · MongoDB · Vector DB | STT · Video · OpenCV |
+| LLM evaluation · Grounding | Async Python · APIs · Production | Knowledge graphs · FAISS · Indexing | Whisper · Inference · Computer vision |
 
-<!-- Dark Neural Network Animation -->
-<div align="center">
-  <img src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake Animation"/>
-</div>
+---
 
-<!-- About Section -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=2&section=header" width="100%"/>
-  
-  <table style="border: none; background-color: #0D1117;">
-    <tr>
-      <td style="border: none; background-color: #0D1117;">
-        <img src="https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d9-4eeccf656e44.gif" width="300" alt="Coding"/>
-      </td>
-      <td style="border: none; background-color: #0D1117; color: #58A6FF;">
-        <h3 style="color: #58A6FF;">🚀 About Me</h3>
-        <p style="color: #F0F6FC;">
-          🔬 AI/ML Engineer specializing in NLP & Computer Vision<br>
-          🧠 Backend Developer with FastAPI & distributed systems<br>
-          ⚡ Building RAG systems, STT pipelines & face recognition<br>
-          🎯 Open Source contributor & MLOps enthusiast<br>
-          🌟 Python-first developer with Go & C++ expertise<br>
-          🤖 Architecting autonomous multi-agent systems
-        </p>
-      </td>
-    </tr>
-  </table>
-</div>
+## 💡 Skills Matrix
 
-<!-- 🆕 AGENTIC AI SECTION -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20&height=3&section=header" width="100%"/>
-  <br>
-  
-  <h2>
-    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjh6YWY3Y2M1NW93NzB5YnN5NWZvbDRsZjl3aTc5bnI1OGthZGRsOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QssGEmpkyEOhBCb7e1/giphy.gif" width="35">
-    <span style="color: #FF6B6B;">Agentic AI & Autonomous Systems</span>
-  </h2>
-  
-  <p align="center" style="color: #F0F6FC;">
-    <i>Building intelligent agents that can reason, plan, and execute complex workflows autonomously</i>
-  </p>
-  
-  <table>
-    <tr>
-      <td align="center" width="140">
-        <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white&labelColor=000000" alt="LangGraph"/>
-        <br><b style="color: #4ECDC4;">LangGraph</b>
-        <br><sub>Stateful Multi-Agent<br>Orchestration</sub>
-      </td>
-      <td align="center" width="140">
-        <img src="https://img.shields.io/badge/CrewAI-FF6B6B?style=for-the-badge&logo=robot&logoColor=white&labelColor=000000" alt="CrewAI"/>
-        <br><b style="color: #4ECDC4;">CrewAI</b>
-        <br><sub>Role-Based Agent<br>Collaboration</sub>
-      </td>
-      <td align="center" width="140">
-        <img src="https://img.shields.io/badge/AutoGen-0078D4?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=000000" alt="AutoGen"/>
-        <br><b style="color: #4ECDC4;">AutoGen</b>
-        <br><sub>Conversational<br>Agent Framework</sub>
-      </td>
-      <td align="center" width="140">
-        <img src="https://img.shields.io/badge/dLLM-9B59B6?style=for-the-badge&logo=pytorch&logoColor=white&labelColor=000000" alt="dLLM"/>
-        <br><b style="color: #4ECDC4;">dLLM</b>
-        <br><sub>Diffusion Language<br>Modeling</sub>
-      </td>
-    </tr>
-  </table>
-  
-  <br>
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20&height=3&section=footer" width="100%"/>
-</div>
+```
+🤖 AI/ML              ⚙️ Backend              💾 Data                 🚀 MLOps
+LLMs · RAG · Agents   FastAPI · APIs         PostgreSQL · MongoDB    Docker · AWS
+Evaluation · CV       WebSockets · Async    Vector DB · Graphs      GitHub Actions
+Hallucination ctrl    Production Scaling    Redis · Indexing        Kubernetes · CI/CD
+```
 
-<!-- Programming Languages Section -->
-<div align="center">
-  <br>
-  <h2 style="color: #FF6B6B;">
-    <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35">
-    🖥️ Programming Languages
-  </h2>
-  
-  <table>
-    <tr>
-      <td align="center" width="120">
-        <img src="https://skillicons.dev/icons?i=python" width="60" height="60" alt="Python"/>
-        <br><b>Python</b>
-        <br><sub>Primary Language</sub>
-      </td>
-      <td align="center" width="120">
-        <img src="https://skillicons.dev/icons?i=go" width="60" height="60" alt="Go"/>
-        <br><b>Go</b>
-        <br><sub>Distributed Systems</sub>
-      </td>
-      <td align="center" width="120">
-        <img src="https://skillicons.dev/icons?i=cpp" width="60" height="60" alt="C++"/>
-        <br><b>C++</b>
-        <br><sub>Performance Critical</sub>
-      </td>
-      <td align="center" width="120">
-        <img src="https://skillicons.dev/icons?i=java" width="60" height="60" alt="Java"/>
-        <br><b>Java</b>
-        <br><sub>Academic Use</sub>
-      </td>
-      <td align="center" width="120">
-        <img src="https://skillicons.dev/icons?i=bash" width="60" height="60" alt="Bash"/>
-        <br><b>Shell/Bash</b>
-        <br><sub>Scripting & Automation</sub>
-      </td>
-    </tr>
-  </table>
-</div>
+---
 
-<!-- Backend & APIs Section -->
-<div align="center">
-  <br>
-  <h2 style="color: #4ECDC4;">
-    <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="35">
-    🚀 Backend & APIs
-  </h2>
-  
-  <table>
-    <tr>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=fastapi" width="60" height="60" alt="FastAPI"/>
-        <br><b>FastAPI</b>
-        <br><sub>High-performance APIs</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=flask" width="60" height="60" alt="Flask"/>
-        <br><b>Flask</b>
-        <br><sub>RAG & Image Search</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://imgs.search.brave.com/h0uahDRfuK2MrIQHRo0AKDWYTkt2GcQjwPaVPi16f9o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9jL2NkL1dl/YlNvY2tldF9jb2xv/cmVkX2xvZ28uc3Zn/LzUxMnB4LVdlYlNv/Y2tldF9jb2xvcmVk/X2xvZ28uc3ZnLnBu/Zw" width="60" height="60" alt="WebSockets"/>
-        <br><b>WebSockets</b>
-        <br><sub>Real-time STT</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://imgs.search.brave.com/PNxm9M7IBdiYS_Jzt6XxoGZd8thPZPtFDeA9mgBLF2E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9yZWdp/c3RyeS5ucG1taXJy/b3IuY29tL0Bsb2Jl/aHViL2ljb25zLXN0/YXRpYy1wbmcvbGF0/ZXN0L2ZpbGVzL2xp/Z2h0L2xhbmdjaGFp/bi1jb2xvci5wbmc" width="60" height="60" alt="LangChain"/>
-        <br><b>LangChain</b>
-        <br><sub>Document RAG</sub>
-      </td>
-    </tr>
-  </table>
-</div>
+## 💻 Tech Stack
 
-<!-- AI/ML/NLP Section -->
-<div align="center">
-  <br>
-  <h2 style="color: #45B7D1;">
-    <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="35">
-    🧠 AI/ML/NLP Stack
-  </h2>
-  
-  <table>
-    <tr>
-      <td align="center" width="120">
-        <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width="60" height="60" alt="Hugging Face"/>
-        <br><b>Hugging Face</b>
-        <br><sub>Transformers</sub>
-      </td>
-      <td align="center" width="120">
-        <img src="https://skillicons.dev/icons?i=tensorflow" width="60" height="60" alt="TensorFlow"/>
-        <br><b>TensorFlow</b>
-        <br><sub>Deep Learning</sub>
-      </td>
-      <td align="center" width="120">
-        <img src="https://skillicons.dev/icons?i=pytorch" width="60" height="60" alt="PyTorch"/>
-        <br><b>PyTorch</b>
-        <br><sub>Neural Networks</sub>
-      </td>
-      <td align="center" width="120">
-        <img src="https://skillicons.dev/icons?i=opencv" width="60" height="60" alt="OpenCV"/>
-        <br><b>OpenCV</b>
-        <br><sub>Computer Vision</sub>
-      </td>
-    </tr>
-  </table>
-  
-  <h3 style="color: #58A6FF;">🎯 Specialized AI Tools</h3>
-  <p align="center">
-    <img src="https://img.shields.io/badge/Whisper-412991?style=for-the-badge&logo=openai&logoColor=white" alt="Whisper"/>
-    <img src="https://img.shields.io/badge/GPT--2-10A37F?style=for-the-badge&logo=openai&logoColor=white" alt="GPT-2"/>
-    <img src="https://img.shields.io/badge/CLIP-FF6B6B?style=for-the-badge&logo=openai&logoColor=white" alt="CLIP"/>
-    <img src="https://img.shields.io/badge/LLaMA2-4285F4?style=for-the-badge&logo=meta&logoColor=white" alt="LLaMA2"/>
-    <img src="https://img.shields.io/badge/InsightFace-FF4B4B?style=for-the-badge&logo=python&logoColor=white" alt="InsightFace"/>
-    <img src="https://img.shields.io/badge/Vosk-2E8B57?style=for-the-badge&logo=python&logoColor=white" alt="Vosk"/>
-  </p>
-</div>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,go,cpp,java,bash,rust" alt="Languages" /> <br/>
+  <img src="https://skillicons.dev/icons?i=fastapi,flask,postgresql,mongodb,redis,docker" alt="Backend & Data" /> <br/>
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,sklearn" alt="ML Frameworks" />
+</p>
 
-<!-- MLOps & Data Section -->
-<div align="center">
-  <br>
-  <h2 style="color: #4ECDC4;">🔧 MLOps & Data Management</h2>
-  
-  <table>
-    <tr>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=docker" width="60" height="60" alt="Docker"/>
-        <br><b>Docker</b>
-        <br><sub>Containerization</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://imgs.search.brave.com/ZiYxM1sbeGoxB8AFkDK3YwFrUZ_-5GFExakZKWVIYuE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ZncmVwby5jb20v/c2hvdy8zNzM1Njgv/ZHZjLnN2Zw" width="60" height="60" alt="DVC"/>
-        <br><b>DVC</b>
-        <br><sub>Data Versioning</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://imgs.search.brave.com/9vY4M94nxVrwJ9cYitw5LoL0nHy2OpLEnQKq3KDWVTQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YnJhbmRmZXRjaC5p/by9pZFM4R01QNWM4/L3cvNDAwL2gvNDAw/L3RoZW1lL2Rhcmsv/aWNvbi5qcGVnP2M9/MWJ4aWQ2NE11cDdh/Y3pld1NBWU1YJnQ9/MTc0MjkyNjMyNzQ4/Nw" width="60" height="60" alt="MLflow"/>
-        <br><b>MLflow</b>
-        <br><sub>Experiment Tracking</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://imgs.search.brave.com/DmXSuIAqustfId670gkPBM_K1quZeX7K6hL_eYrdLcg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/NGE4MTdhMmU3ZTIy/MDgyNzJkMWNlMzAv/NjY3MDM3ZGEwM2U0/NTY5ZGI2ZTMxMTM1/X3plbm1sX2ljb24u/cG5n" width="60" height="60" alt="ZenML"/>
-        <br><b>ZenML</b>
-        <br><sub>ML Pipelines</sub>
-      </td>
-    </tr>
-  </table>
-</div>
+**AI Ecosystems:** 
+<p align="center">
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=chainlink&logoColor=white" alt="LangChain" />
+  <img src="https://img.shields.io/badge/LangGraph-00FF41?style=flat-square&logo=graphql&logoColor=black" alt="LangGraph" />
+  <img src="https://img.shields.io/badge/LlamaIndex-00D9FF?style=flat-square&logoColor=white" alt="LlamaIndex" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFB700?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/OpenAI-000000?style=flat-square&logo=openai&logoColor=white" alt="OpenAI" />
+  <img src="https://img.shields.io/badge/Claude-8B5CF6?style=flat-square&logoColor=white" alt="Claude" />
+  <img src="https://img.shields.io/badge/FAISS-FF006E?style=flat-square&logoColor=white" alt="FAISS" />
+  <img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" alt="Neo4j" />
+</p>
 
-<!-- Databases Section -->
-<div align="center">
-  <br>
-  <h2 style="color: #45B7D1;">🗃️ Databases & Storage</h2>
-  
-  <table>
-    <tr>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=postgresql" width="60" height="60" alt="PostgreSQL"/>
-        <br><b>PostgreSQL</b>
-        <br><sub>+ pgvector</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=mongodb" width="60" height="60" alt="MongoDB"/>
-        <br><b>MongoDB</b>
-        <br><sub>NoSQL</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=mysql" width="60" height="60" alt="MySQL"/>
-        <br><b>MySQL</b>
-        <br><sub>Relational DB</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=sqlite" width="60" height="60" alt="SQLite"/>
-        <br><b>SQLite</b>
-        <br><sub>Lightweight</sub>
-      </td>
-    </tr>
-  </table>
-</div>
+**Cloud & DevOps:**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=aws,azure,docker,github,git,linux" alt="Cloud & DevOps" />
+</p>
 
-<!-- DevOps & Cloud Section -->
-<div align="center">
-  <br>
-  <h2 style="color: #FF6B6B;">☁️ DevOps & Infrastructure</h2>
-  
-  <table>
-    <tr>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=github" width="60" height="60" alt="GitHub"/>
-        <br><b>GitHub</b>
-        <br><sub>Version Control</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=azure" width="60" height="60" alt="Azure"/>
-        <br><b>Azure VMs</b>
-        <br><sub>Cloud Compute</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=ubuntu" width="60" height="60" alt="Ubuntu"/>
-        <br><b>Ubuntu</b>
-        <br><sub>Server Management</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://imgs.search.brave.com/PpvNT-3bx-VZ80dhQbVijQSSTnximNgLRh33p8lrWOE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZWdp/c3RyeS5ucG1taXJy/b3IuY29tL0Bsb2Jl/aHViL2ljb25zLXN0/YXRpYy1wbmcvbGF0/ZXN0L2ZpbGVzL2xp/Z2h0L2NvbGFiLWNv/bG9yLnBuZw" width="60" height="60" alt="Google Colab"/>
-        <br><b>Google Colab</b>
-        <br><sub>ML Development</sub>
-      </td>
-    </tr>
-  </table>
-</div>
+---
 
-<!-- UI & Visualization Section -->
-<div align="center">
-  <br>
-  <h2 style="color: #4ECDC4;">🌐 UI & Data Visualization</h2>
-  
-  <table>
-    <tr>
-      <td align="center" width="150">
-        <img src="https://imgs.search.brave.com/pTsF54UrIdvXmOJhHbMKWs8afkc72XU8ALlLdyzmCNc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdHls/ZXMucmVkZGl0bWVk/aWEuY29tL3Q1Xzdp/c3BvMy9zdHlsZXMv/Y29tbXVuaXR5SWNv/bl9reHkyank4bXo4/YWExLnBuZw" width="60" height="60" alt="Streamlit"/>
-        <br><b>Streamlit</b>
-        <br><sub>ML Prototypes</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://imgs.search.brave.com/mAs8XTRd5CE21INZEzWOVGsvCS-EtR9SUPtS8HDTYV8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXRw/bG90bGliLm9yZy9z/dGFibGUvX2ltYWdl/cy9zcGh4X2dscl9s/b2dvczJfMDAzLnBu/Zw" width="60" height="60" alt="Matplotlib"/>
-        <br><b>Matplotlib</b>
-        <br><sub>Data Visualization</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://imgs.search.brave.com/V1_8_rsEL6Z3e7unMCZMgt8Kxqpld-KmCcbMqIjqy0A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzQ0LzIvc2VhYm9y/bi1sb2dvLXBuZ19z/ZWVrbG9nby00NDE4/NDYucG5n" width="60" height="60" alt="Seaborn"/>
-        <br><b>Seaborn</b>
-        <br><sub>Statistical Plots</sub>
-      </td>
-      <td align="center" width="150">
-        <img src="https://imgs.search.brave.com/Yg4f7s-XkqX4rSCNssn68IBJ00mVepoxjwr--mjx6Nc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL3RodW1icy82/MmUxNDI0NWViNGQ5/YTlkYzA1NGMxODEu/cG5n" width="60" height="60" alt="Tableau"/>
-        <br><b>Tableau</b>
-        <br><sub>Dashboards</sub>
-      </td>
-    </tr>
-  </table>
-</div>
+## ⚡ Agentic AI Capabilities
 
-<!-- Featured Projects Section -->
-<div align="center">
-  <br>
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,12,20&height=3&section=header" width="100%"/>
-  <br>
-  <h2 style="color: #45B7D1;">
-    <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="35">
-    🚀 Featured Projects
-  </h2>
-  
-  <table>
-    <tr>
-      <td width="50%" valign="top">
-        <h3>🤖 Multi-Agent Knowledge Graph Builder</h3>
-        <p>Production-ready multi-agent pipeline with 4 specialized agents (Entity, Fetch, KnowledgeDB, Judge) that extracts entities, fetches real-time web context, constructs knowledge graphs in Neo4j, and produces executive summaries</p>
-        <p><b>⚡ 5-10x faster with intelligent caching | 70-90% cache hit rate</b></p>
-        <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Groq-FF6B6B?style=for-the-badge&logo=ai&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"/>
-      </td>
-      <td width="50%" valign="top">
-        <h3>🎯 Marketing Multi-Agent System</h3>
-        <p>Comprehensive AI marketing automation with 3 specialized agents (Lead Triage, Engagement, Campaign Optimization) featuring multi-layer memory (short-term, long-term, episodic, semantic) and 18 synthetic datasets for training</p>
-        <p><b>🧠 Adaptive memory | A/B testing | Predictive modeling</b></p>
-        <img src="https://img.shields.io/badge/Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
-        <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
-        <img src="https://img.shields.io/badge/RandomForest-FF6B6B?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <h3>📞 Sales Call AI Analysis System</h3>
-        <p>Production-ready FastAPI system powered by Claude 3.5 Sonnet that analyzes sales call transcripts with section-based processing (Opening, Pitch, Objections, Closing) and multi-criteria scoring for conversion prediction</p>
-        <p><b>🎯 5 scoring dimensions | 100% test success rate | 95%+ section accuracy</b></p>
-        <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Claude_3.5-7C3AED?style=for-the-badge&logo=anthropic&logoColor=white"/>
-        <img src="https://img.shields.io/badge/OpenRouter-FF6B6B?style=for-the-badge&logo=ai&logoColor=white"/>
-      </td>
-      <td width="50%" valign="top">
-        <h3>🔄 More Projects Coming Soon...</h3>
-        <p>Actively building:</p>
-        <ul align="left">
-          <li>🎤 Hinglish STT Pipeline with Whisper & WebSockets</li>
-          <li>🔍 BERT + FAISS Semantic Search Engine</li>
-          <li>👤 Real-time Face Recognition with InsightFace</li>
-          <li>📚 Document RAG System with LLaMA2 & LangChain</li>
-        </ul>
-        <img src="https://img.shields.io/badge/Whisper-412991?style=for-the-badge&logo=openai&logoColor=white"/>
-        <img src="https://img.shields.io/badge/BERT-FF6B6B?style=for-the-badge&logo=huggingface&logoColor=white"/>
-        <img src="https://img.shields.io/badge/LLaMA2-4285F4?style=for-the-badge&logo=meta&logoColor=white"/>
-      </td>
-    </tr>
-  </table>
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Multi%20Agent-LangGraph%20·%20ReAct%20·%20Planning-00FF41?style=for-the-badge" alt="Multi-Agent" />
+  <img src="https://img.shields.io/badge/RAG%20Systems-Vector%20·%20Graph%20·%20Hybrid-00D9FF?style=for-the-badge" alt="RAG" />
+  <img src="https://img.shields.io/badge/Evaluation-Judge%20·%20Validation%20·%20Grounding-FF006E?style=for-the-badge" alt="Evaluation" />
+  <img src="https://img.shields.io/badge/Automation-Agents%20·%20CRM%20·%20Workflows-FFB700?style=for-the-badge" alt="Automation" />
+</p>
 
-<!-- GitHub Stats -->
-<div align="center">
-  <br>
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,12,20&height=3&section=header" width="100%"/>
-  <br>
-  <h2 style="color: #FF6B6B;">
-    <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35">
-    📊 GitHub Analytics
-  </h2>
-  
-  <table>
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=aadik1ng&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=FF6B6B&icon_color=4ECDC4&text_color=F0F6FC" alt="GitHub Stats"/>
-      </td>
-      <td>
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=aadik1ng&theme=tokyonight&hide_border=true&background=0D1117&stroke=FF6B6B&ring=4ECDC4&fire=45B7D1&currStreakLabel=F0F6FC" alt="GitHub Streak"/>
-      </td>
-    </tr>
-  </table>
-  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aadik1ng&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=FF6B6B&text_color=F0F6FC" alt="Top Languages"/>
-</div>
+---
 
-<!-- GitHub Trophies -->
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=aadik1ng&theme=darkhub&no-frame=true&row=1&column=6" alt="GitHub Trophies"/>
-</div>
+## 🔥 Featured Projects
 
-<!-- Connect Section -->
-<div align="center">
-  <br>
-  <h2 style="color: #4ECDC4;">
-    <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="35">
-    🌐 Connect With Me
-  </h2>
-  
-  <a href="https://www.linkedin.com/in/aaditya-a-b95254214" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="https://www.leetcode.com/aadik1ng" target="_blank">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/>
-  </a>
-  <a href="mailto:your.email@example.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-</div>
+### 1️⃣ **Intel-Doc** — Agentic GraphRAG for Document Intelligence
+**Use Case:** Enterprise document Q&A with <5% hallucination rate. Analyzes logistics & legal documents with high-precision extraction and grounding.
 
-<!-- Activity Graph -->
-<div align="center">
-  <br>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aadik1ng&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=FF6B6B&line=4ECDC4&point=45B7D1" width="100%" alt="Activity Graph"/>
-</div>
+**Architecture:** Agentic LangGraph pipeline → Hybrid vector + graph retrieval (Memgraph) → Judge-first validation → Grounded answer generation with telemetry
 
-<!-- Footer -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=120&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=fff&animation=fadeIn&fontAlignY=70" width="100%"/>
-</div>
+**Key Features:**
+- Cyclic agentic loops with fast-fail fallbacks
+- Strict grounding node (faithfulness scoring)
+- Context relevance validation *before* generation
+- Chunking strategy optimized for fact-density
+- Confidence scoring (model + retrieval + faithfulness weighted)
+
+**Stack:** `LlamaIndex` · `LangGraph` · `Memgraph 3.0` · `LiteLLM` · `FastAPI` · `Streamlit`
+
+**Metrics:** Hallucination detection, retrieval confidence, post-generation audit
+
+---
+
+### 2️⃣ **GraphRAG (Lease AI)** — Multi-Document Legal Analysis
+**Use Case:** Analyze lease documents, extract structured data (parties, financial terms, dates), perform Q&A with source citations.
+
+**Architecture:** FalkorDB graph + ChromaDB vector hybrid search → FastAPI backend → ADK chat interface → Structured extraction templates
+
+**Key Features:**
+- PDF upload & multi-document indexing
+- Structured lease summary extraction (parties, dates, financials, options)
+- Source citation for every answer (page numbers)
+- API endpoints for upload, delete, chat, extract, evaluate
+- Automated quality testing
+
+**Stack:** `Google ADK` · `FalkorDB` · `ChromaDB` · `FastAPI` · `OpenAI` · `Docker`
+
+**Use Cases:** Real estate analysis, contract review, compliance checks, automated lease summaries
+
+---
+
+### 3️⃣ **Clinical Intake Agent** — Dual-Mode Healthcare Intake System
+**Use Case:** Conversational clinical intake for healthcare workflows. Supports text chat (MVP) and real-time voice with Whisper STT + OpenAI TTS.
+
+**Architecture:** FastAPI backend + Streamlit UI + LiveKit voice room → Azure OpenAI LLM → Whisper STT/TTS pipeline → Real-time voice worker daemon
+
+**Key Features:**
+- Dual-mode interface (text chat + real-time voice)
+- LiveKit WebRTC for browser-based voice (cloud or self-hosted Docker)
+- OpenAI Whisper STT with clinical language tuning
+- OpenAI TTS for agent responses
+- Session-based state management
+- Automatic brief generation on session end
+- Structured intake slots & red flag detection
+- Multimodal response capability (text → voice in same flow)
+- One-command startup (Windows PowerShell + Linux bash scripts)
+
+**Stack:** `FastAPI` · `Streamlit` · `LiveKit` · `Whisper STT` · `OpenAI TTS` · `Azure OpenAI` · `LiteLLM` · `Docker`
+
+**Workflow:** Client starts text/voice session → AI asks intake questions → Collects structured data → Flags medical concerns → Generates brief summary
+
+---
+
+### 4️⃣ **Shinzo** — MCP Server Observability Platform
+**Use Case:** Complete OpenTelemetry-compatible observability for AI agent MCP servers. Monitor tool usage, analyze performance, contextualize agent behavior.
+
+**Architecture:** Automatic instrumentation of FastMCP/MCP servers → OpenTelemetry exports → Shinzo dashboard for insights
+
+**Key Features:**
+- One-line instrumentation for MCP servers
+- Agent usage pattern analysis
+- Tool call contextualization
+- Performance metrics & latency tracking
+- Multi-platform support
+- Flexible export configuration
+- Bearer token auth for security
+
+**Stack:** `OpenTelemetry` · `MCP SDK / FastMCP` · `Python` · `Observability standards`
+
+**Metrics:** Tool invocation rates, latency, error tracking, agent behavior patterns
+
+---
+
+### 5️⃣ **Ramy** — UAE Mortgage Advisor Agent
+**Use Case:** Conversational financial advisor for UAE expats navigating mortgage decisions. Provides "buy vs. rent" analysis, affordability calculations, and mortgage guidance using deterministic tools.
+
+**Architecture:** Google ADK agent → LiteLLM (Groq) for ultra-fast LLM → Deterministic Python tools (NO hallucination on numbers) → FastAPI backend + vanilla JS frontend with streaming SSE
+
+**Key Features:**
+- Conversational "buy vs. rent" analysis with break-even calculations
+- Deterministic financial tools (EMI, affordability, eligibility checks)
+- UAE-specific mortgage rules & regulations (20% down, LTV limits, DBR)
+- Streaming responses via Server-Sent Events (SSE)
+- Lead capture at natural conversation stops
+- Glassmorphism UI for modern UX
+- Groq integration for sub-second response times
+- Pytest test suite for financial tools
+- Docker + Google Cloud Run deployment
+
+**Stack:** `Google ADK` · `LiteLLM` · `Groq llama-3.3-70b` · `FastAPI` · `Vanilla JS/HTML5/CSS3` · `Pytest` · `Docker` · `Cloud Run`
+
+**Tools:**
+- `tool_calculate_mortgage` — EMI, interest, upfront costs
+- `tool_assess_affordability` — Max budget by DBR rules
+- `tool_compare_buy_vs_rent` — Break-even tenure analysis
+- `tool_check_eligibility` — Expat/national/self-employment rules
+- `tool_get_uae_mortgage_rules` — Central Bank regulations
+
+---
+
+---
+
+## 📊 GitHub Analytics
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Aadik1ng&theme=dark&hide_border=true&stroke=00FF41" alt="GitHub streak" width="100%" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Aadik1ng&theme=react-dark&hide_border=true&bg_color=0d1117&color=00FF41&line=00D9FF&point=FF006E" alt="Contribution activity" width="100%" />
+
+---
+
+## 🌱 Exploring
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🎤%20Voice%20AI-STT%20·%20Agents-00FF41?style=flat-square" alt="Voice AI" />
+  <img src="https://img.shields.io/badge/📊%20GraphRAG-Memory%20·%20Graphs-00D9FF?style=flat-square" alt="GraphRAG" />
+  <img src="https://img.shields.io/badge/👁️%20Computer%20Vision-Real%20Time%20·%20Edge-FF006E?style=flat-square" alt="CV" />
+  <img src="https://img.shields.io/badge/✅%20LLM%20Reliability-Evaluation%20·%20Safety-FFB700?style=flat-square" alt="LLM Reliability" />
+  <img src="https://img.shields.io/badge/🚀%20AI%20Prod-Scaling%20·%20Ops-00FF41?style=flat-square" alt="AI Production" />
+</p>
+
+---
+
+---
+
+## 🔗 Connect & Collaborate
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20To-Collabs%20·%20Consulting-00FF41?style=for-the-badge" alt="Open to collabs" />
+  <img src="https://img.shields.io/badge/Specializing%20In-AI%20%2F%20Backend%20Systems-00D9FF?style=for-the-badge" alt="Specializing" />
+</p>
+
+---
+
+## 📱 Links
+
+<p align="center">
+  <a href="https://github.com/Aadik1ng"><img src="https://img.shields.io/badge/GitHub-Aadik1ng-00FF41?style=for-the-badge&logo=github" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/aaditya-a-b95254214"><img src="https://img.shields.io/badge/LinkedIn-Aaditya%20Aaryan-00D9FF?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
+  <a href="mailto:aadityaaryan639@gmail.com"><img src="https://img.shields.io/badge/Email-aadityaaryan639-FF006E?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://www.leetcode.com/aadik1ng"><img src="https://img.shields.io/badge/LeetCode-aadik1ng-FFB700?style=for-the-badge&logo=leetcode" alt="LeetCode" /></a>
+</p>
+
+### 💡 Open to Collaborations
+**Building:** AI/ML systems · Production LLM applications · Agentic workflows · Real-time backends · Computer vision pipelines
+
+---
+
+<p align="center">
+  <b>Made with ⚡ & 🧠 by Aaditya Aaryan</b><br/>
+  <sub>Turning ideas into intelligent, production-ready systems</sub>
+</p>
