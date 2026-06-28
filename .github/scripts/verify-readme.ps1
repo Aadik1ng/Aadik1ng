@@ -33,10 +33,8 @@ function Test-Asset {
     return
   }
 
-  if ($url -match 'raw\.githubusercontent\.com/.+/output/') {
-    Write-Host "WARN $Label HTTP $code (workflow asset; run Generate All Profile Assets if missing)" -ForegroundColor Yellow
-    return
-  }
+  try {
+    $response = Invoke-WebRequest -Uri $PathOrUrl -Method Head -UseBasicParsing -TimeoutSec 20
     if ($response.StatusCode -ge 200 -and $response.StatusCode -lt 400) {
       Write-Host "OK   $Label ($($response.StatusCode))" -ForegroundColor Green
     } else {
@@ -45,6 +43,10 @@ function Test-Asset {
     }
   } catch {
     $code = $_.Exception.Response.StatusCode.value__
+    if ($PathOrUrl -match 'raw\.githubusercontent\.com/.+/output/') {
+      Write-Host "WARN $Label HTTP $code (workflow asset; run Generate All Profile Assets if missing)" -ForegroundColor Yellow
+      return
+    }
     Write-Host "FAIL $Label HTTP $code" -ForegroundColor Red
     $script:failures++
   }
