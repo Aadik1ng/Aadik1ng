@@ -23,7 +23,7 @@ Building production AI systems — **LLMs · GraphRAG · Multi-Agent · Voice ·
 
 <br/><br/>
 
-<img src="./assets/transformer-architecture.svg" alt="Animated Transformer encoder architecture" width="100%" />
+<img src="./assets/transformer-architecture.svg" alt="I-JEPA architecture in GitHub contribution-grid style" width="100%" />
 
 </div>
 
