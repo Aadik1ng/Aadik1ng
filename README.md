@@ -138,18 +138,10 @@ Open source contributor · MLOps · Available for work
 
 ## GitHub Analytics
 
-### GitHub Stats
 <img src="https://github-readme-stats.vercel.app/api?username=Aadik1ng&show_icons=true&theme=dark&hide_border=true&bg_color=080808&title_color=d41414&icon_color=ff2020&text_color=e8e8e8" alt="GitHub stats" width="100%" />
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aadik1ng&layout=compact&theme=dark&hide_border=true&bg_color=080808&title_color=d41414&text_color=e8e8e8" alt="Top languages" width="100%" />
 
-### Metrics Dashboard
-<img src="https://raw.githubusercontent.com/Aadik1ng/Aadik1ng/output/github-metrics.svg" alt="GitHub metrics dashboard" width="100%" />
-
-### Isometric Commit Calendar
-<img src="https://raw.githubusercontent.com/Aadik1ng/Aadik1ng/output/github-isocalendar.svg" alt="Isometric commit calendar" width="100%" />
-
-### Streak and Activity
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Aadik1ng&theme=dark&hide_border=true&background=080808&stroke=d41414&ring=d41414&fire=d41414&currStreakLabel=d41414" alt="GitHub streak" width="100%" />
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Aadik1ng&theme=react-dark&hide_border=true&bg_color=080808&color=d41414&line=ff2020&point=d41414" alt="Contribution activity" width="100%" />
