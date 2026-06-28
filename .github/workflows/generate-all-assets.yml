@@ -23,18 +23,6 @@ jobs:
       - name: Copy transformer architecture graphic
         run: cp assets/transformer-architecture.svg dist/transformer-architecture.svg
 
-      - name: 3D contribution graph
-        uses: yoshi389111/github-profile-3d-contrib@latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: Aadik1ng
-
-      - name: Stage 3D assets
-        run: |
-          cp profile-3d-contrib/profile-green-animate.svg dist/github-profile-3d-animate.svg
-          cp profile-3d-contrib/profile-night-view.svg dist/github-profile-3d.svg
-          cp profile-3d-contrib/profile-gitblock.svg dist/github-profile-3d-gitblock.svg
-
       - name: Metrics dashboard
         uses: lowlighter/metrics@latest
         with:
@@ -72,7 +60,6 @@ jobs:
         run: |
           ls -la dist
           test -s dist/transformer-architecture.svg
-          test -s dist/github-profile-3d-animate.svg
           test -s dist/github-metrics.svg
           test -s dist/github-isocalendar.svg
 

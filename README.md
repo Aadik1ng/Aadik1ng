@@ -143,12 +143,6 @@ Open source contributor · MLOps · Available for work
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aadik1ng&layout=compact&theme=dark&hide_border=true&bg_color=080808&title_color=d41414&text_color=e8e8e8" alt="Top languages" width="100%" />
 
-### 3D Contribution Graph
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Aadik1ng/Aadik1ng/output/github-profile-3d.svg" />
-  <img src="https://raw.githubusercontent.com/Aadik1ng/Aadik1ng/output/github-profile-3d-animate.svg" alt="3D GitHub contribution graph" width="100%" />
-</picture>
-
 ### Metrics Dashboard
 <img src="https://raw.githubusercontent.com/Aadik1ng/Aadik1ng/output/github-metrics.svg" alt="GitHub metrics dashboard" width="100%" />
 
