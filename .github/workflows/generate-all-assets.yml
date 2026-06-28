@@ -36,6 +36,9 @@ jobs:
       - name: Collect isocalendar output
         run: cp /metrics_renders/github-isocalendar.svg dist/
 
+      - name: Recolor calendar to red and black theme
+        run: pwsh .github/scripts/recolor-isocalendar.ps1 -SvgPath dist/github-isocalendar.svg
+
       - name: Verify generated assets
         run: |
           test -s dist/transformer-architecture.svg

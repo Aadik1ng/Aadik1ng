@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - .github/workflows/generate-isocalendar.yml
+      - .github/scripts/recolor-isocalendar.ps1
 
 concurrency:
   group: profile-output-branch
@@ -39,6 +40,9 @@ jobs:
 
       - name: Collect isocalendar output
         run: cp /metrics_renders/github-isocalendar.svg dist/
+
+      - name: Recolor calendar to red and black theme
+        run: pwsh .github/scripts/recolor-isocalendar.ps1 -SvgPath dist/github-isocalendar.svg
 
       - name: Verify isocalendar output
         run: test -s dist/github-isocalendar.svg
