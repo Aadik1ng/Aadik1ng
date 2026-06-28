@@ -24,6 +24,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Prepare output directory
+        run: mkdir -p dist
+
       - name: Render isometric commit calendar
         uses: lowlighter/metrics@latest
         with:
@@ -33,6 +36,9 @@ jobs:
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
+
+      - name: Verify isocalendar output
+        run: test -s dist/github-isocalendar.svg
 
       - name: Publish to output branch
         uses: peaceiris/actions-gh-pages@v4

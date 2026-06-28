@@ -17,10 +17,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Transformer architecture graphic
-        run: |
-          mkdir -p dist
-          cp .github/assets/transformer-architecture.svg dist/transformer-architecture.svg
+      - name: Prepare output directory
+        run: mkdir -p dist
+
+      - name: Copy transformer architecture graphic
+        run: cp assets/transformer-architecture.svg dist/transformer-architecture.svg
 
       - name: 3D contribution graph
         uses: yoshi389111/github-profile-3d-contrib@latest
@@ -40,21 +41,17 @@ jobs:
           token: ${{ github.token }}
           output_action: none
           filename: dist/github-metrics.svg
-          config_display: large
-          config_theme: dark
           config_timezone: Asia/Kolkata
           base: header, activity, community, repositories, metadata
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_colors: red
-          plugin_streak: yes
           plugin_topics: yes
           plugin_topics_limit: 10
           plugin_followup: yes
           plugin_habits: yes
           plugin_habits_from: 200
           plugin_lines: yes
-          plugin_notable: yes
 
       - name: Isometric calendar
         uses: lowlighter/metrics@latest
@@ -65,6 +62,13 @@ jobs:
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
+
+      - name: Verify generated assets
+        run: |
+          test -s dist/transformer-architecture.svg
+          test -s dist/github-profile-3d-animate.svg
+          test -s dist/github-metrics.svg
+          test -s dist/github-isocalendar.svg
 
       - name: Publish all assets to output branch
         uses: peaceiris/actions-gh-pages@v4

@@ -9,7 +9,7 @@ on:
       - main
     paths:
       - .github/workflows/generate-transformer-graphic.yml
-      - .github/assets/transformer-architecture.svg
+      - assets/transformer-architecture.svg
 
 concurrency:
   group: profile-output-branch
@@ -28,7 +28,8 @@ jobs:
       - name: Stage transformer architecture graphic
         run: |
           mkdir -p dist
-          cp .github/assets/transformer-architecture.svg dist/transformer-architecture.svg
+          cp assets/transformer-architecture.svg dist/transformer-architecture.svg
+          test -s dist/transformer-architecture.svg
 
       - name: Publish to output branch
         uses: peaceiris/actions-gh-pages@v4
