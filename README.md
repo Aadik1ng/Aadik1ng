@@ -52,8 +52,8 @@ Open source contributor · MLOps · Available for work
 ## Featured Projects
 
 > Hardest builds — agentic AI, GraphRAG, voice, and production systems.  
-> Full portfolio → **[aadik1ng.github.io]([https://aadik1ng.github.io])**
-
+>Full portfolio → **[aadik1ng.github.io](https://aadik1ng.github.io)**
+> 
 | # | Project | Focus | Repo |
 |:---:|:---|:---|:---:|
 | 01 | **Intel-Doc** | Agentic GraphRAG · LangGraph · Memgraph · judge-first grounding | [→](https://github.com/Aadik1ng/Intel-Doc) |
