@@ -1,0 +1,76 @@
+name: Generate All Profile Assets
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: profile-output-branch
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Transformer architecture graphic
+        run: |
+          mkdir -p dist
+          cp .github/assets/transformer-architecture.svg dist/transformer-architecture.svg
+
+      - name: 3D contribution graph
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: Aadik1ng
+
+      - name: Stage 3D assets
+        run: |
+          cp profile-3d-contrib/profile-green-animate.svg dist/github-profile-3d-animate.svg
+          cp profile-3d-contrib/profile-night-view.svg dist/github-profile-3d.svg
+          cp profile-3d-contrib/profile-gitblock.svg dist/github-profile-3d-gitblock.svg
+
+      - name: Metrics dashboard
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ github.token }}
+          output_action: none
+          filename: dist/github-metrics.svg
+          config_display: large
+          config_theme: dark
+          config_timezone: Asia/Kolkata
+          base: header, activity, community, repositories, metadata
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_colors: red
+          plugin_streak: yes
+          plugin_topics: yes
+          plugin_topics_limit: 10
+          plugin_followup: yes
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_lines: yes
+          plugin_notable: yes
+
+      - name: Isometric calendar
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ github.token }}
+          output_action: none
+          filename: dist/github-isocalendar.svg
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+
+      - name: Publish all assets to output branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: output
+          keep_files: true
+          commit_message: "chore: regenerate all profile assets"

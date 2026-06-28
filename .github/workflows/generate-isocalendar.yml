@@ -1,0 +1,44 @@
+name: Generate Isometric Calendar
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/generate-isocalendar.yml
+
+concurrency:
+  group: profile-output-branch
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render isometric commit calendar
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ github.token }}
+          output_action: none
+          filename: dist/github-isocalendar.svg
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+
+      - name: Publish to output branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: output
+          keep_files: true
+          commit_message: "chore: update isometric calendar"

@@ -1,232 +1,181 @@
-# ⚡ AADITYA AARYAN
+<div align="center">
+
+# AADITYA AARYAN
 
 ### AI/ML Engineer · Backend Developer · Agentic AI Builder
 
-Building production-ready AI systems. **LLMs · RAG · Multi-Agent Workflows · Computer Vision · Real-Time STT · FastAPI**
+Building production AI systems — **LLMs · GraphRAG · Multi-Agent · Voice · FastAPI**
 
-<div align="center">
-  <a href="https://github.com/Aadik1ng"><img src="https://img.shields.io/badge/GitHub-Aadik1ng-00FF41?style=flat-square&logo=github" alt="GitHub" /></a>
-  <a href="https://www.linkedin.com/in/aaditya-a-b95254214"><img src="https://img.shields.io/badge/LinkedIn-Aaditya%20Aaryan-00D9FF?style=flat-square&logo=linkedin" alt="LinkedIn" /></a>
-  <a href="mailto:aadityaaryan639@gmail.com"><img src="https://img.shields.io/badge/Email-aadityaaryan639-FF006E?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://www.leetcode.com/aadik1ng"><img src="https://img.shields.io/badge/LeetCode-aadik1ng-FFB700?style=flat-square&logo=leetcode" alt="LeetCode" /></a>
-  <a href="https://github.com/Aadik1ng?tab=followers"><img src="https://komarev.com/ghpvc/?username=Aadik1ng&style=flat-square&color=00FF41" alt="Views" /></a>
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=DM+Sans&weight=600&size=22&pause=1200&color=D41414&center=true&vCenter=true&width=780&lines=Judge-before-gen+agentic+RAG;Graph+%C3%97+vector+hybrid+retrieval;Production+FastAPI+%2B+voice+agents)](https://git.io/typing-svg)
+
+<br/>
+
+<a href="https://aadik1ng.github.io/"><img src="https://img.shields.io/badge/Portfolio-aadik1ng.github.io-d41414?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+<a href="https://github.com/Aadik1ng"><img src="https://img.shields.io/badge/GitHub-Aadik1ng-080808?style=for-the-badge&logo=github&logoColor=d41414" alt="GitHub" /></a>
+<a href="https://www.linkedin.com/in/aaditya-a-b95254214"><img src="https://img.shields.io/badge/LinkedIn-Aaditya%20Aaryan-d41414?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="mailto:aadityaaryan639@gmail.com"><img src="https://img.shields.io/badge/Email-aadityaaryan639-080808?style=for-the-badge&logo=gmail&logoColor=d41414" alt="Email" /></a>
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=Aadik1ng&label=Profile%20views&color=d41414&style=flat-square" alt="Views" />
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/Aadik1ng/Aadik1ng/main/.github/assets/transformer-architecture.svg" alt="Animated Transformer encoder architecture" width="100%" />
+
 </div>
 
 ---
 
-## 🎯 Core Domains
+<div align="center">
 
-| 🧠 **LLMs & Agents** | ⚙️ **Backend** | 📊 **Data** | 👁️ **Real-Time AI** |
-|---|---|---|---|
-| Multi-agent · RAG · GraphRAG | FastAPI · WebSockets · Microservices | PostgreSQL · MongoDB · Vector DB | STT · Video · OpenCV |
-| LLM evaluation · Grounding | Async Python · APIs · Production | Knowledge graphs · FAISS · Indexing | Whisper · Inference · Computer vision |
+| **Judge-Before-Gen** | **Vector × Graph** | **Zero-Drift Tools** |
+|:---:|:---:|:---:|
+| Faithfulness-Gated Answers | Memgraph · FalkorDB Fusion | Deterministic Agent Arithmetic |
 
----
-
-## 💡 Skills Matrix
-
-```
-🤖 AI/ML              ⚙️ Backend              💾 Data                 🚀 MLOps
-LLMs · RAG · Agents   FastAPI · APIs         PostgreSQL · MongoDB    Docker · AWS
-Evaluation · CV       WebSockets · Async    Vector DB · Graphs      GitHub Actions
-Hallucination ctrl    Production Scaling    Redis · Indexing        Kubernetes · CI/CD
-```
+</div>
 
 ---
 
-## 💻 Tech Stack
+## About
+
+AI/ML engineer focused on **agentic systems**, **hybrid retrieval**, and **production backends**.
+
+Currently building RAG pipelines, real-time voice agents, and graph-augmented document intelligence — with grounding and faithfulness checks wired in before generation, not after.
+
+Open source contributor · MLOps · Available for work
+
+---
+
+## Featured Projects
+
+> Hardest builds — agentic AI, GraphRAG, voice, and production systems.  
+> Full portfolio → **[aadik1ng.github.io](https://aadik1ng.github.io/)**
+
+| # | Project | Focus | Repo |
+|:---:|:---|:---|:---:|
+| 01 | **Intel-Doc** | Agentic GraphRAG · LangGraph · Memgraph · judge-first grounding | [→](https://github.com/Aadik1ng/Intel-Doc) |
+| 02 | **Clinical Intake Agent** | LiveKit voice · Whisper STT · healthcare intake slots | [→](https://github.com/Aadik1ng/Clinical-intake-agent) |
+| 03 | **GraphRAG (Lease AI)** | FalkorDB + ChromaDB · legal Q&A · page citations | [→](https://github.com/Aadik1ng/GraphRAG) |
+| 04 | **VoiceRAG** | Voice-driven RAG · spoken queries over documents | [→](https://github.com/Aadik1ng/VoiceRAG) |
+| 05 | **Ramy · Mortgage ADK** | Google ADK · deterministic EMI/DBR tools · Groq SSE | [→](https://github.com/Aadik1ng/Mortgage_Advisor_ADK) |
+| 06 | **Financial Deep Research** | Autonomous multi-step financial research agent | [→](https://github.com/Aadik1ng/Financial_Deep_Research) |
+| 07 | **Remote Photoplethysmography** | Heart rate from video · CV + signal processing | [→](https://github.com/Aadik1ng/Remote-Photoplethysmography) |
+| 08 | **Context-Aware Retrieval** | Hybrid search · query rewriting · relevance scoring | [→](https://github.com/Aadik1ng/Context-Aware-Retrieval-Engine) |
+
+<details>
+<summary><b>Intel-Doc</b> — deep dive</summary>
+
+**Use case:** Enterprise document Q&A with <5% hallucination target.
+
+**Architecture:** Agentic LangGraph → hybrid vector + graph (Memgraph) → judge-first validation → grounded generation
+
+**Stack:** `LlamaIndex` · `LangGraph` · `Memgraph` · `LiteLLM` · `FastAPI` · `Streamlit`
+
+</details>
+
+<details>
+<summary><b>Clinical Intake Agent</b> — deep dive</summary>
+
+**Use case:** Dual-mode healthcare intake — text chat and real-time voice.
+
+**Architecture:** FastAPI · Streamlit · LiveKit WebRTC · Whisper STT · OpenAI TTS · Azure OpenAI
+
+**Stack:** `FastAPI` · `LiveKit` · `Whisper` · `LiteLLM` · `Docker`
+
+</details>
+
+<details>
+<summary><b>GraphRAG (Lease AI)</b> — deep dive</summary>
+
+**Use case:** Multi-document lease analysis with structured extraction and cited Q&A.
+
+**Architecture:** FalkorDB + ChromaDB hybrid → FastAPI → Google ADK chat
+
+**Stack:** `Google ADK` · `FalkorDB` · `ChromaDB` · `FastAPI` · `Docker`
+
+</details>
+
+---
+
+## Agentic Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Judge--Before--Gen-Faithfulness%20Gates-d41414?style=flat-square" alt="Judge-Before-Gen" />
+  <img src="https://img.shields.io/badge/GraphRAG-Vector%20×%20Graph-080808?style=flat-square&logoColor=d41414" alt="GraphRAG" />
+  <img src="https://img.shields.io/badge/LangGraph-Cyclic%20Fast--Fail-151515?style=flat-square" alt="LangGraph" />
+  <img src="https://img.shields.io/badge/Google%20ADK-Production%20Agents-d41414?style=flat-square" alt="ADK" />
+  <img src="https://img.shields.io/badge/LiveKit-Voice%20Agents-080808?style=flat-square" alt="LiveKit" />
+  <img src="https://img.shields.io/badge/MCP-Tool%20Orchestration-151515?style=flat-square" alt="MCP" />
+  <img src="https://img.shields.io/badge/Zero--Drift%20Tools-Deterministic%20Math-d41414?style=flat-square" alt="Zero-Drift" />
+</p>
+
+---
+
+## Tech Stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,go,cpp,java,bash,rust" alt="Languages" /> <br/>
   <img src="https://skillicons.dev/icons?i=fastapi,flask,postgresql,mongodb,redis,docker" alt="Backend & Data" /> <br/>
-  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,sklearn" alt="ML Frameworks" />
-</p>
-
-**AI Ecosystems:** 
-<p align="center">
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=chainlink&logoColor=white" alt="LangChain" />
-  <img src="https://img.shields.io/badge/LangGraph-00FF41?style=flat-square&logo=graphql&logoColor=black" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/LlamaIndex-00D9FF?style=flat-square&logoColor=white" alt="LlamaIndex" />
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFB700?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
-  <img src="https://img.shields.io/badge/OpenAI-000000?style=flat-square&logo=openai&logoColor=white" alt="OpenAI" />
-  <img src="https://img.shields.io/badge/Claude-8B5CF6?style=flat-square&logoColor=white" alt="Claude" />
-  <img src="https://img.shields.io/badge/FAISS-FF006E?style=flat-square&logoColor=white" alt="FAISS" />
-  <img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" alt="Neo4j" />
-</p>
-
-**Cloud & DevOps:**
-<p align="center">
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,sklearn" alt="ML Frameworks" /> <br/>
   <img src="https://skillicons.dev/icons?i=aws,azure,docker,github,git,linux" alt="Cloud & DevOps" />
 </p>
 
----
-
-## ⚡ Agentic AI Capabilities
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Multi%20Agent-LangGraph%20·%20ReAct%20·%20Planning-00FF41?style=for-the-badge" alt="Multi-Agent" />
-  <img src="https://img.shields.io/badge/RAG%20Systems-Vector%20·%20Graph%20·%20Hybrid-00D9FF?style=for-the-badge" alt="RAG" />
-  <img src="https://img.shields.io/badge/Evaluation-Judge%20·%20Validation%20·%20Grounding-FF006E?style=for-the-badge" alt="Evaluation" />
-  <img src="https://img.shields.io/badge/Automation-Agents%20·%20CRM%20·%20Workflows-FFB700?style=for-the-badge" alt="Automation" />
+  <img src="https://img.shields.io/badge/LangChain-080808?style=flat-square&logo=chainlink&logoColor=d41414" alt="LangChain" />
+  <img src="https://img.shields.io/badge/LangGraph-d41414?style=flat-square&logo=graphql&logoColor=white" alt="LangGraph" />
+  <img src="https://img.shields.io/badge/LlamaIndex-151515?style=flat-square&logoColor=d41414" alt="LlamaIndex" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-080808?style=flat-square&logo=huggingface&logoColor=d41414" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/OpenAI-151515?style=flat-square&logo=openai&logoColor=d41414" alt="OpenAI" />
+  <img src="https://img.shields.io/badge/Memgraph-d41414?style=flat-square&logo=neo4j&logoColor=white" alt="Memgraph" />
+  <img src="https://img.shields.io/badge/FalkorDB-080808?style=flat-square&logo=neo4j&logoColor=d41414" alt="FalkorDB" />
+  <img src="https://img.shields.io/badge/FAISS-d41414?style=flat-square&logoColor=white" alt="FAISS" />
 </p>
 
 ---
 
-## 🔥 Featured Projects
+## GitHub Analytics
 
-### 1️⃣ **Intel-Doc** — Agentic GraphRAG for Document Intelligence
-**Use Case:** Enterprise document Q&A with <5% hallucination rate. Analyzes logistics & legal documents with high-precision extraction and grounding.
+<!-- Generated by workflows in .github/workflows/ → published to output branch -->
 
-**Architecture:** Agentic LangGraph pipeline → Hybrid vector + graph retrieval (Memgraph) → Judge-first validation → Grounded answer generation with telemetry
+### 3D Contribution Graph
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Aadik1ng/Aadik1ng/output/github-profile-3d.svg" />
+  <img src="https://raw.githubusercontent.com/Aadik1ng/Aadik1ng/output/github-profile-3d-animate.svg" alt="3D GitHub contribution graph" width="100%" />
+</picture>
 
-**Key Features:**
-- Cyclic agentic loops with fast-fail fallbacks
-- Strict grounding node (faithfulness scoring)
-- Context relevance validation *before* generation
-- Chunking strategy optimized for fact-density
-- Confidence scoring (model + retrieval + faithfulness weighted)
+### Metrics Dashboard
+<img src="https://raw.githubusercontent.com/Aadik1ng/Aadik1ng/output/github-metrics.svg" alt="GitHub metrics dashboard" width="100%" />
 
-**Stack:** `LlamaIndex` · `LangGraph` · `Memgraph 3.0` · `LiteLLM` · `FastAPI` · `Streamlit`
+### Isometric Commit Calendar
+<img src="https://raw.githubusercontent.com/Aadik1ng/Aadik1ng/output/github-isocalendar.svg" alt="Isometric commit calendar" width="100%" />
 
-**Metrics:** Hallucination detection, retrieval confidence, post-generation audit
+### Trophies
+<img src="https://github-profile-trophy.vercel.app/?username=Aadik1ng&theme=darkhub&no-frame=true&column=4&margin-w=8&margin-h=8" alt="GitHub trophies" width="100%" />
 
----
+### Streak & Activity
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Aadik1ng&theme=dark&hide_border=true&background=080808&stroke=d41414&ring=d41414&fire=d41414&currStreakLabel=d41414" alt="GitHub streak" width="100%" />
 
-### 2️⃣ **GraphRAG (Lease AI)** — Multi-Document Legal Analysis
-**Use Case:** Analyze lease documents, extract structured data (parties, financial terms, dates), perform Q&A with source citations.
-
-**Architecture:** FalkorDB graph + ChromaDB vector hybrid search → FastAPI backend → ADK chat interface → Structured extraction templates
-
-**Key Features:**
-- PDF upload & multi-document indexing
-- Structured lease summary extraction (parties, dates, financials, options)
-- Source citation for every answer (page numbers)
-- API endpoints for upload, delete, chat, extract, evaluate
-- Automated quality testing
-
-**Stack:** `Google ADK` · `FalkorDB` · `ChromaDB` · `FastAPI` · `OpenAI` · `Docker`
-
-**Use Cases:** Real estate analysis, contract review, compliance checks, automated lease summaries
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Aadik1ng&theme=react-dark&hide_border=true&bg_color=080808&color=d41414&line=ff2020&point=d41414" alt="Contribution activity" width="100%" />
 
 ---
 
-### 3️⃣ **Clinical Intake Agent** — Dual-Mode Healthcare Intake System
-**Use Case:** Conversational clinical intake for healthcare workflows. Supports text chat (MVP) and real-time voice with Whisper STT + OpenAI TTS.
+<div align="center">
 
-**Architecture:** FastAPI backend + Streamlit UI + LiveKit voice room → Azure OpenAI LLM → Whisper STT/TTS pipeline → Real-time voice worker daemon
+### Connect
 
-**Key Features:**
-- Dual-mode interface (text chat + real-time voice)
-- LiveKit WebRTC for browser-based voice (cloud or self-hosted Docker)
-- OpenAI Whisper STT with clinical language tuning
-- OpenAI TTS for agent responses
-- Session-based state management
-- Automatic brief generation on session end
-- Structured intake slots & red flag detection
-- Multimodal response capability (text → voice in same flow)
-- One-command startup (Windows PowerShell + Linux bash scripts)
+<img src="https://img.shields.io/badge/Open%20To-Collabs%20·%20Consulting-d41414?style=for-the-badge" alt="Open to collabs" />
+<img src="https://img.shields.io/badge/Focus-Agentic%20AI%20·%20Backend-080808?style=for-the-badge&logoColor=d41414" alt="Focus" />
 
-**Stack:** `FastAPI` · `Streamlit` · `LiveKit` · `Whisper STT` · `OpenAI TTS` · `Azure OpenAI` · `LiteLLM` · `Docker`
+<br/><br/>
 
-**Workflow:** Client starts text/voice session → AI asks intake questions → Collects structured data → Flags medical concerns → Generates brief summary
+**Building:** faithfulness-gated RAG · cyclic agent loops · voice intake pipelines · graph-vector fusion
 
----
+<br/><br/>
 
-### 4️⃣ **Shinzo** — MCP Server Observability Platform
-**Use Case:** Complete OpenTelemetry-compatible observability for AI agent MCP servers. Monitor tool usage, analyze performance, contextualize agent behavior.
+<b>Aaditya Aaryan</b><br/>
+<sub><a href="https://aadik1ng.github.io/">aadik1ng.github.io</a> · Turning ideas into intelligent, production-ready systems</sub>
 
-**Architecture:** Automatic instrumentation of FastMCP/MCP servers → OpenTelemetry exports → Shinzo dashboard for insights
-
-**Key Features:**
-- One-line instrumentation for MCP servers
-- Agent usage pattern analysis
-- Tool call contextualization
-- Performance metrics & latency tracking
-- Multi-platform support
-- Flexible export configuration
-- Bearer token auth for security
-
-**Stack:** `OpenTelemetry` · `MCP SDK / FastMCP` · `Python` · `Observability standards`
-
-**Metrics:** Tool invocation rates, latency, error tracking, agent behavior patterns
-
----
-
-### 5️⃣ **Ramy** — UAE Mortgage Advisor Agent
-**Use Case:** Conversational financial advisor for UAE expats navigating mortgage decisions. Provides "buy vs. rent" analysis, affordability calculations, and mortgage guidance using deterministic tools.
-
-**Architecture:** Google ADK agent → LiteLLM (Groq) for ultra-fast LLM → Deterministic Python tools (NO hallucination on numbers) → FastAPI backend + vanilla JS frontend with streaming SSE
-
-**Key Features:**
-- Conversational "buy vs. rent" analysis with break-even calculations
-- Deterministic financial tools (EMI, affordability, eligibility checks)
-- UAE-specific mortgage rules & regulations (20% down, LTV limits, DBR)
-- Streaming responses via Server-Sent Events (SSE)
-- Lead capture at natural conversation stops
-- Glassmorphism UI for modern UX
-- Groq integration for sub-second response times
-- Pytest test suite for financial tools
-- Docker + Google Cloud Run deployment
-
-**Stack:** `Google ADK` · `LiteLLM` · `Groq llama-3.3-70b` · `FastAPI` · `Vanilla JS/HTML5/CSS3` · `Pytest` · `Docker` · `Cloud Run`
-
-**Tools:**
-- `tool_calculate_mortgage` — EMI, interest, upfront costs
-- `tool_assess_affordability` — Max budget by DBR rules
-- `tool_compare_buy_vs_rent` — Break-even tenure analysis
-- `tool_check_eligibility` — Expat/national/self-employment rules
-- `tool_get_uae_mortgage_rules` — Central Bank regulations
-
----
-
----
-
-## 📊 GitHub Analytics
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Aadik1ng&theme=dark&hide_border=true&stroke=00FF41" alt="GitHub streak" width="100%" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Aadik1ng&theme=react-dark&hide_border=true&bg_color=0d1117&color=00FF41&line=00D9FF&point=FF006E" alt="Contribution activity" width="100%" />
-
----
-
-## 🌱 Exploring
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🎤%20Voice%20AI-STT%20·%20Agents-00FF41?style=flat-square" alt="Voice AI" />
-  <img src="https://img.shields.io/badge/📊%20GraphRAG-Memory%20·%20Graphs-00D9FF?style=flat-square" alt="GraphRAG" />
-  <img src="https://img.shields.io/badge/👁️%20Computer%20Vision-Real%20Time%20·%20Edge-FF006E?style=flat-square" alt="CV" />
-  <img src="https://img.shields.io/badge/✅%20LLM%20Reliability-Evaluation%20·%20Safety-FFB700?style=flat-square" alt="LLM Reliability" />
-  <img src="https://img.shields.io/badge/🚀%20AI%20Prod-Scaling%20·%20Ops-00FF41?style=flat-square" alt="AI Production" />
-</p>
-
----
-
----
-
-## 🔗 Connect & Collaborate
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Open%20To-Collabs%20·%20Consulting-00FF41?style=for-the-badge" alt="Open to collabs" />
-  <img src="https://img.shields.io/badge/Specializing%20In-AI%20%2F%20Backend%20Systems-00D9FF?style=for-the-badge" alt="Specializing" />
-</p>
-
----
-
-## 📱 Links
-
-<p align="center">
-  <a href="https://github.com/Aadik1ng"><img src="https://img.shields.io/badge/GitHub-Aadik1ng-00FF41?style=for-the-badge&logo=github" alt="GitHub" /></a>
-  <a href="https://www.linkedin.com/in/aaditya-a-b95254214"><img src="https://img.shields.io/badge/LinkedIn-Aaditya%20Aaryan-00D9FF?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
-  <a href="mailto:aadityaaryan639@gmail.com"><img src="https://img.shields.io/badge/Email-aadityaaryan639-FF006E?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://www.leetcode.com/aadik1ng"><img src="https://img.shields.io/badge/LeetCode-aadik1ng-FFB700?style=for-the-badge&logo=leetcode" alt="LeetCode" /></a>
-</p>
-
-### 💡 Open to Collaborations
-**Building:** AI/ML systems · Production LLM applications · Agentic workflows · Real-time backends · Computer vision pipelines
-
----
-
-<p align="center">
-  <b>Made with ⚡ & 🧠 by Aaditya Aaryan</b><br/>
-  <sub>Turning ideas into intelligent, production-ready systems</sub>
-</p>
+</div>
