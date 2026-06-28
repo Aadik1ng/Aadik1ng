@@ -46,7 +46,7 @@ jobs:
           plugin_lines: yes
 
       - name: Collect metrics output
-        run: mv github-metrics.svg dist/
+        run: cp /metrics_renders/github-metrics.svg dist/
 
       - name: Verify metrics output
         run: test -s dist/github-metrics.svg

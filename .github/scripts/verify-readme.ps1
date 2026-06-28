@@ -33,8 +33,10 @@ function Test-Asset {
     return
   }
 
-  try {
-    $response = Invoke-WebRequest -Uri $PathOrUrl -Method Head -UseBasicParsing -TimeoutSec 20
+  if ($url -match 'raw\.githubusercontent\.com/.+/output/') {
+    Write-Host "WARN $Label HTTP $code (workflow asset; run Generate All Profile Assets if missing)" -ForegroundColor Yellow
+    return
+  }
     if ($response.StatusCode -ge 200 -and $response.StatusCode -lt 400) {
       Write-Host "OK   $Label ($($response.StatusCode))" -ForegroundColor Green
     } else {

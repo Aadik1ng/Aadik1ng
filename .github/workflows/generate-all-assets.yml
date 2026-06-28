@@ -65,8 +65,8 @@ jobs:
 
       - name: Collect generated assets
         run: |
-          mv github-metrics.svg dist/
-          mv github-isocalendar.svg dist/
+          cp /metrics_renders/github-metrics.svg dist/
+          cp /metrics_renders/github-isocalendar.svg dist/
 
       - name: Verify generated assets
         run: |
