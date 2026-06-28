@@ -43,6 +43,9 @@ jobs:
           plugin_languages_colors: red
           plugin_lines: yes
 
+      - name: Stage metrics output
+        run: cp /metrics_renders/github-metrics.svg github-metrics.svg
+
       - name: Remove zero-value metrics
         run: python3 .github/scripts/prune-zero-metrics.py github-metrics.svg
 

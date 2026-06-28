@@ -38,6 +38,9 @@ jobs:
           plugin_languages_colors: red
           plugin_lines: yes
 
+      - name: Stage metrics output
+        run: cp /metrics_renders/github-metrics.svg github-metrics.svg
+
       - name: Remove zero-value metrics
         run: python3 .github/scripts/prune-zero-metrics.py github-metrics.svg
 
@@ -53,7 +56,7 @@ jobs:
 
       - name: Collect generated assets
         run: |
-          cp /metrics_renders/github-metrics.svg dist/
+          cp github-metrics.svg dist/
           cp /metrics_renders/github-isocalendar.svg dist/
 
       - name: Verify generated assets
