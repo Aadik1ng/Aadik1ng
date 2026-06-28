@@ -32,10 +32,13 @@ jobs:
         with:
           token: ${{ github.token }}
           output_action: none
-          filename: dist/github-isocalendar.svg
+          filename: github-isocalendar.svg
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
+
+      - name: Collect isocalendar output
+        run: mv github-isocalendar.svg dist/
 
       - name: Verify isocalendar output
         run: test -s dist/github-isocalendar.svg

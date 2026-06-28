@@ -32,7 +32,7 @@ jobs:
         with:
           token: ${{ github.token }}
           output_action: none
-          filename: dist/github-metrics.svg
+          filename: github-metrics.svg
           config_timezone: Asia/Kolkata
           base: header, activity, community, repositories, metadata
           plugin_languages: yes
@@ -44,6 +44,9 @@ jobs:
           plugin_habits: yes
           plugin_habits_from: 200
           plugin_lines: yes
+
+      - name: Collect metrics output
+        run: mv github-metrics.svg dist/
 
       - name: Verify metrics output
         run: test -s dist/github-metrics.svg

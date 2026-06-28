@@ -40,7 +40,7 @@ jobs:
         with:
           token: ${{ github.token }}
           output_action: none
-          filename: dist/github-metrics.svg
+          filename: github-metrics.svg
           config_timezone: Asia/Kolkata
           base: header, activity, community, repositories, metadata
           plugin_languages: yes
@@ -58,13 +58,19 @@ jobs:
         with:
           token: ${{ github.token }}
           output_action: none
-          filename: dist/github-isocalendar.svg
+          filename: github-isocalendar.svg
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
+      - name: Collect generated assets
+        run: |
+          mv github-metrics.svg dist/
+          mv github-isocalendar.svg dist/
+
       - name: Verify generated assets
         run: |
+          ls -la dist
           test -s dist/transformer-architecture.svg
           test -s dist/github-profile-3d-animate.svg
           test -s dist/github-metrics.svg
