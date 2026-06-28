@@ -1,7 +1,14 @@
-name: Generate All Profile Assets
+name: Generate Isometric Calendar
 
 on:
+  schedule:
+    - cron: "0 6 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/generate-isocalendar.yml
 
 concurrency:
   group: profile-output-branch
@@ -12,7 +19,7 @@ jobs:
     permissions:
       contents: read
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
 
     steps:
       - uses: actions/checkout@v4
@@ -20,10 +27,7 @@ jobs:
       - name: Prepare output directory
         run: mkdir -p dist
 
-      - name: Copy transformer architecture graphic
-        run: cp assets/transformer-architecture.svg dist/transformer-architecture.svg
-
-      - name: Isometric contribution calendar
+      - name: Render isometric commit calendar
         uses: lowlighter/metrics@latest
         with:
           token: ${{ github.token }}
@@ -36,16 +40,14 @@ jobs:
       - name: Collect isocalendar output
         run: cp /metrics_renders/github-isocalendar.svg dist/
 
-      - name: Verify generated assets
-        run: |
-          test -s dist/transformer-architecture.svg
-          test -s dist/github-isocalendar.svg
+      - name: Verify isocalendar output
+        run: test -s dist/github-isocalendar.svg
 
-      - name: Publish all assets to output branch
+      - name: Publish to output branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
           publish_branch: output
           keep_files: true
-          commit_message: "chore: regenerate profile assets"
+          commit_message: "chore: update isometric contribution calendar"
