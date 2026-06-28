@@ -9,33 +9,33 @@ Set-Location $root
 
 $cell = 8
 $gap = 2
-$levels = @("#161b22", "#0e4429", "#006d32", "#26a641", "#39d353")
+$levels = @("#161b22", "#2a1212", "#6b1515", "#d41414", "#ff2020")
+$stroke = "#3a1212"
+$W = 920
+$H = 318
 
 function Get-Cell([int]$x, [int]$y, [int]$level, [double]$delay = 0, [switch]$Animate) {
   $fill = $levels[[Math]::Min(4, [Math]::Max(0, $level))]
   $px = $x * ($cell + $gap)
   $py = $y * ($cell + $gap)
-  $lines = @("  <rect x=`"$px`" y=`"$py`" width=`"$cell`" height=`"$cell`" rx=`"2`" fill=`"$fill`" stroke=`"#21262d`" stroke-width=`"0.5`"/>")
   if ($Animate -and $level -gt 0) {
     $l0 = $levels[[Math]::Max(0, $level - 1)]
     $l1 = $fill
     $l2 = $levels[[Math]::Min(4, $level + 1)]
     $dur = [Math]::Round(2 + (($x + $y) % 4) * 0.2, 1)
     return @(
-      "  <rect x=`"$px`" y=`"$py`" width=`"$cell`" height=`"$cell`" rx=`"2`" fill=`"$fill`" stroke=`"#21262d`" stroke-width=`"0.5`">",
+      "  <rect x=`"$px`" y=`"$py`" width=`"$cell`" height=`"$cell`" rx=`"2`" fill=`"$fill`" stroke=`"$stroke`" stroke-width=`"0.5`">",
       "    <animate attributeName=`"fill`" values=`"$l0;$l1;$l2;$l1`" dur=`"${dur}s`" begin=`"${delay}s`" repeatCount=`"indefinite`"/>",
       "  </rect>"
     ) -join "`n"
   }
-  return $lines[0]
+  return "  <rect x=`"$px`" y=`"$py`" width=`"$cell`" height=`"$cell`" rx=`"2`" fill=`"$fill`" stroke=`"$stroke`" stroke-width=`"0.5`"/>"
 }
 
 function Get-GridLevel([int]$x, [int]$y, [string]$Region) {
   switch ($Region) {
     "input-context" {
-      if ($x -ge 0 -and $x -le 7 -and $y -ge 1 -and $y -le 4) {
-        return 2 + (($x + $y) % 3)
-      }
+      if ($x -ge 0 -and $x -le 7 -and $y -ge 1 -and $y -le 4) { return 2 + (($x + $y) % 3) }
       if ($x -ge 8 -and $x -le 9 -and $y -ge 1 -and $y -le 2) { return 3 }
       if ($x -ge 10 -and $x -le 11 -and $y -ge 2 -and $y -le 4) { return 4 }
       if ($x -ge 9 -and $x -le 10 -and $y -ge 4 -and $y -le 5) { return 3 }
@@ -47,36 +47,75 @@ function Get-GridLevel([int]$x, [int]$y, [string]$Region) {
       if ($x -ge 9 -and $x -le 11 -and $y -ge 1 -and $y -le 5) { return [Math]::Min(4, $base + 1) }
       return $base
     }
-    "encoder" {
-      return 1 + (($x + $y * 2) % 4)
-    }
-    "predictor" {
-      return 2 + (($x * $y + $x) % 3)
-    }
-    "latent-pred" {
-      return 2 + (($x + $y) % 3)
-    }
-    "latent-tgt" {
-      return 1 + (($x * 2 + $y) % 3)
-    }
+    "encoder" { return 1 + (($x + $y * 2) % 4) }
+    "predictor" { return 2 + (($x * $y + $x) % 3) }
+    "latent-pred" { return 2 + (($x + $y) % 3) }
+    "latent-tgt" { return 1 + (($x * 2 + $y) % 3) }
     default { return 0 }
   }
 }
 
+function Add-Label([System.Text.StringBuilder]$sb, [int]$x, [int]$y, [string]$text, [string]$color = "#7d8590", [int]$size = 9, [switch]$Bold) {
+  $weight = if ($Bold) { ' font-weight="600"' } else { "" }
+  [void]$sb.AppendLine("  <text x=`"$x`" y=`"$y`" fill=`"$color`" font-family=`"Segoe UI, Arial, sans-serif`" font-size=`"$size`"$weight text-anchor=`"middle`">$text</text>")
+}
+
+function Add-LabelGroup([System.Text.StringBuilder]$sb, [int]$x, [int]$y, [string[]]$lines, [string]$color = "#7d8590", [int]$size = 9, [switch]$Bold) {
+  for ($i = 0; $i -lt $lines.Count; $i++) {
+    Add-Label $sb $x ($y + ($i * 11)) $lines[$i] $color $size -Bold:$Bold
+  }
+}
+
+function Add-Grid([System.Text.StringBuilder]$sb, [int]$gx, [int]$gy, [int]$cols, [int]$rows, [string]$region, [switch]$Animate, [int]$levelOffset = 0) {
+  [void]$sb.AppendLine("  <g transform=`"translate($gx,$gy)`">")
+  for ($y = 0; $y -lt $rows; $y++) {
+    for ($x = 0; $x -lt $cols; $x++) {
+      $lvl = [Math]::Max(0, (Get-GridLevel -x $x -y $y -Region $region) - $levelOffset)
+      $delay = [Math]::Round(($x * 0.05 + $y * 0.07) % 2.5, 2)
+      [void]$sb.AppendLine((Get-Cell -x $x -y $y -level $lvl -delay $delay -Animate:($Animate -and $lvl -gt 0)))
+    }
+  }
+  [void]$sb.AppendLine('  </g>')
+}
+
 $sb = New-Object System.Text.StringBuilder
-[void]$sb.AppendLine('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" role="img" aria-label="I-JEPA architecture in contribution-grid style">')
-[void]$sb.AppendLine('  <rect width="920" height="300" fill="#0d1117"/>')
+[void]$sb.AppendLine("<svg xmlns=`"http://www.w3.org/2000/svg`" viewBox=`"0 0 $W $H`" role=`"img`" aria-label=`"Contribution-grid architecture diagram`">")
+[void]$sb.AppendLine("  <rect width=`"$W`" height=`"$H`" fill=`"#080808`"/>")
 [void]$sb.AppendLine('  <defs>')
-[void]$sb.AppendLine('    <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#39d353"/></marker>')
+[void]$sb.AppendLine('    <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#ff2020"/></marker>')
 [void]$sb.AppendLine('    <marker id="arrDim" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#484f58"/></marker>')
 [void]$sb.AppendLine('  </defs>')
-[void]$sb.AppendLine('  <text x="460" y="26" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">I-JEPA | Joint Embedding Predictive Architecture</text>')
-[void]$sb.AppendLine('  <text x="460" y="44" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="10" text-anchor="middle">contribution-grid view | predict target embeddings in latent space</text>')
 
-# Input patch grid (context + targets)
-$gx = 24; $gy = 58
-[void]$sb.AppendLine("  <g transform=`"translate($gx,$gy)`">")
-[void]$sb.AppendLine('    <text x="52" y="-8" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="9" text-anchor="middle">Input patches</text>')
+# Column anchors
+$colInput = 78
+$colCtx = 198
+$colPred = 312
+$colZhat = 434
+$colLoss = 548
+$colSemantic = 742
+
+$rowStudentLabel = 28
+$rowStudentGrid = 54
+$rowStudentFoot = 144
+$rowDivider = 162
+$rowTeacherLabel = 174
+$rowTeacherGrid = 192
+$rowTeacherFoot = 284
+$emaX = $colCtx - 46
+$ctxEncBottom = $rowStudentGrid + 90
+$tgtEncTop = $rowTeacherGrid - 2
+$emaLabelY = [int](($ctxEncBottom + $tgtEncTop) / 2)
+
+Add-Label $sb $colInput $rowStudentLabel "Input patches"
+Add-LabelGroup $sb $colCtx $rowStudentLabel @("Context", "Encoder")
+Add-Label $sb $colPred $rowStudentLabel "Predictor"
+Add-Label $sb $colZhat $rowStudentLabel "z-hat predicted" "#ff2020" 8 -Bold
+Add-Label $sb $colLoss ($rowStudentLabel + 5) "L2 loss"
+Add-Label $sb $colSemantic ($rowStudentLabel - 2) "Abstract prediction | no pixel decode" "#7d8590" 8
+
+# Student path grids
+$inputW = 12 * ($cell + $gap) - $gap
+[void]$sb.AppendLine("  <g transform=`"translate($([int]($colInput - $inputW / 2)),$rowStudentGrid)`">")
 for ($y = 0; $y -lt 7; $y++) {
   for ($x = 0; $x -lt 12; $x++) {
     $lvl = Get-GridLevel -x $x -y $y -Region "input-context"
@@ -84,149 +123,87 @@ for ($y = 0; $y -lt 7; $y++) {
     [void]$sb.AppendLine((Get-Cell -x $x -y $y -level $lvl -delay $delay -Animate:($lvl -gt 1)))
   }
 }
-[void]$sb.AppendLine('    <rect x="-2" y="10" width="74" height="46" rx="3" fill="none" stroke="#39d353" stroke-width="1" stroke-dasharray="3 2" opacity="0.8"/>')
-[void]$sb.AppendLine('    <text x="35" y="66" fill="#39d353" font-family="Segoe UI, Arial, sans-serif" font-size="7" text-anchor="middle">context</text>')
-[void]$sb.AppendLine('    <text x="96" y="66" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="7" text-anchor="middle">targets</text>')
+[void]$sb.AppendLine('    <rect x="-2" y="10" width="74" height="46" rx="3" fill="none" stroke="#ff2020" stroke-width="1" stroke-dasharray="3 2" opacity="0.85"/>')
+[void]$sb.AppendLine('  </g>')
+Add-Label $sb ($colInput - 22) $rowStudentFoot "context" "#ff2020" 7
+Add-Label $sb ($colInput + 24) $rowStudentFoot "targets" "#484f58" 7
+
+Add-Grid $sb ($colCtx - 22) $rowStudentGrid 5 10 "encoder" -Animate
+Add-Label $sb $colCtx $rowStudentFoot "z_ctx" "#484f58" 7
+
+Add-Grid $sb ($colPred - 35) ($rowStudentGrid + 6) 8 8 "predictor" -Animate
+Add-Label $sb $colPred $rowStudentFoot "+ mask tokens" "#484f58" 7
+
+Add-Grid $sb ($colZhat - 22) $rowStudentGrid 5 10 "latent-pred" -Animate
+
+# L2 box
+[void]$sb.AppendLine("  <g transform=`"translate($($colLoss - 40),$($rowStudentGrid + 2))`">")
+[void]$sb.AppendLine('    <rect width="80" height="84" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>')
+[void]$sb.AppendLine('    <text x="40" y="24" fill="#ff2020" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">L2</text>')
+[void]$sb.AppendLine('    <text x="40" y="40" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="8" text-anchor="middle">loss</text>')
+[void]$sb.AppendLine('    <text x="40" y="56" fill="#484f58" font-family="Segoe UI, Arial, sans-serif" font-size="7" text-anchor="middle">||z-hat - z||</text>')
+[void]$sb.AppendLine('    <text x="40" y="70" fill="#484f58" font-family="Segoe UI, Arial, sans-serif" font-size="7" text-anchor="middle">latent space</text>')
 [void]$sb.AppendLine('  </g>')
 
-# Context encoder grid
-$gx = 168; $gy = 62
-[void]$sb.AppendLine("  <g transform=`"translate($gx,$gy)`">")
-[void]$sb.AppendLine('    <text x="22" y="-8" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="9" text-anchor="middle">Context</text>')
-[void]$sb.AppendLine('    <text x="22" y="2" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="9" text-anchor="middle">Encoder</text>')
-for ($y = 0; $y -lt 10; $y++) {
-  for ($x = 0; $x -lt 5; $x++) {
-    $lvl = Get-GridLevel -x $x -y $y -Region "encoder"
-    $delay = [Math]::Round(($y * 0.12) % 2, 2)
-    [void]$sb.AppendLine((Get-Cell -x $x -y $y -level $lvl -delay $delay -Animate))
-  }
-}
-[void]$sb.AppendLine('    <text x="22" y="98" fill="#484f58" font-family="Segoe UI, Arial, sans-serif" font-size="7" text-anchor="middle">z_ctx</text>')
-[void]$sb.AppendLine('  </g>')
-
-# Predictor grid
-$gx = 268; $gy = 72
-[void]$sb.AppendLine("  <g transform=`"translate($gx,$gy)`">")
-[void]$sb.AppendLine('    <text x="25" y="-8" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="9" text-anchor="middle">Predictor</text>')
-for ($y = 0; $y -lt 8; $y++) {
-  for ($x = 0; $x -lt 8; $x++) {
-    $lvl = Get-GridLevel -x $x -y $y -Region "predictor"
-    $delay = [Math]::Round((($x + $y) * 0.08) % 2.2, 2)
-    [void]$sb.AppendLine((Get-Cell -x $x -y $y -level $lvl -delay $delay -Animate))
-  }
-}
-[void]$sb.AppendLine('    <text x="35" y="86" fill="#484f58" font-family="Segoe UI, Arial, sans-serif" font-size="7" text-anchor="middle">+ mask tokens</text>')
-[void]$sb.AppendLine('  </g>')
-
-# Predicted latent
-$gx = 400; $gy = 62
-[void]$sb.AppendLine("  <g transform=`"translate($gx,$gy)`">")
-[void]$sb.AppendLine('    <text x="22" y="-8" fill="#39d353" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">z-hat predicted</text>')
-for ($y = 0; $y -lt 10; $y++) {
-  for ($x = 0; $x -lt 5; $x++) {
-    $lvl = Get-GridLevel -x $x -y $y -Region "latent-pred"
-    $delay = [Math]::Round(($y * 0.1 + $x * 0.05) % 2, 2)
-    [void]$sb.AppendLine((Get-Cell -x $x -y $y -level $lvl -delay $delay -Animate))
-  }
-}
-[void]$sb.AppendLine('  </g>')
-
-# Full input (teacher path)
-$gx = 24; $gy = 178
-[void]$sb.AppendLine("  <g transform=`"translate($gx,$gy)`">")
-[void]$sb.AppendLine('    <text x="52" y="-8" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="9" text-anchor="middle">Full image</text>')
+# Semantic panel
+$semW = 22 * ($cell + $gap) - $gap
+[void]$sb.AppendLine("  <g transform=`"translate($([int]($colSemantic - $semW / 2)),$rowStudentGrid)`">")
 for ($y = 0; $y -lt 7; $y++) {
-  for ($x = 0; $x -lt 12; $x++) {
-    $lvl = Get-GridLevel -x $x -y $y -Region "input-full"
-    [void]$sb.AppendLine((Get-Cell -x $x -y $y -level $lvl))
-  }
-}
-[void]$sb.AppendLine('  </g>')
-
-# Target encoder
-$gx = 168; $gy = 182
-[void]$sb.AppendLine("  <g transform=`"translate($gx,$gy)`">")
-[void]$sb.AppendLine('    <text x="22" y="-8" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="9" text-anchor="middle">Target</text>')
-[void]$sb.AppendLine('    <text x="22" y="2" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="9" text-anchor="middle">Encoder</text>')
-for ($y = 0; $y -lt 10; $y++) {
-  for ($x = 0; $x -lt 5; $x++) {
-    $lvl = [Math]::Max(0, (Get-GridLevel -x $x -y $y -Region "encoder") - 1)
-    [void]$sb.AppendLine((Get-Cell -x $x -y $y -level $lvl))
-  }
-}
-[void]$sb.AppendLine('    <text x="22" y="98" fill="#484f58" font-family="Segoe UI, Arial, sans-serif" font-size="7" text-anchor="middle">z_tgt</text>')
-[void]$sb.AppendLine('  </g>')
-
-# Target latent
-$gx = 400; $gy = 182
-[void]$sb.AppendLine("  <g transform=`"translate($gx,$gy)`">")
-[void]$sb.AppendLine('    <text x="22" y="-8" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="9" text-anchor="middle">z target</text>')
-for ($y = 0; $y -lt 10; $y++) {
-  for ($x = 0; $x -lt 5; $x++) {
-    $lvl = Get-GridLevel -x $x -y $y -Region "latent-tgt"
-    [void]$sb.AppendLine((Get-Cell -x $x -y $y -level $lvl))
-  }
-}
-[void]$sb.AppendLine('    <text x="22" y="98" fill="#484f58" font-family="Segoe UI, Arial, sans-serif" font-size="7" text-anchor="middle">stop-grad</text>')
-[void]$sb.AppendLine('  </g>')
-
-# Flow arrows (pixel-style dotted)
-[void]$sb.AppendLine('  <path d="M142 95 H168" stroke="#39d353" stroke-width="1.5" marker-end="url(#arr)" fill="none" opacity="0.8"/>')
-[void]$sb.AppendLine('  <path d="M228 95 H268" stroke="#39d353" stroke-width="1.5" marker-end="url(#arr)" fill="none" opacity="0.8"/>')
-[void]$sb.AppendLine('  <path d="M358 95 H400" stroke="#39d353" stroke-width="1.5" marker-end="url(#arr)" fill="none" opacity="0.8"/>')
-[void]$sb.AppendLine('  <path d="M142 215 H168" stroke="#484f58" stroke-width="1.2" marker-end="url(#arrDim)" fill="none" stroke-dasharray="4 3"/>')
-[void]$sb.AppendLine('  <path d="M228 215 H400" stroke="#484f58" stroke-width="1.2" marker-end="url(#arrDim)" fill="none" stroke-dasharray="4 3"/>')
-[void]$sb.AppendLine('  <path d="M190 162 C190 172, 190 172, 190 182" stroke="#7d8590" stroke-width="1" fill="none" stroke-dasharray="4 3" marker-end="url(#arrDim)"/>')
-[void]$sb.AppendLine('  <text x="204" y="176" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="8">EMA</text>')
-
-# L2 loss block
-[void]$sb.AppendLine('  <g transform="translate(490, 108)">')
-[void]$sb.AppendLine('    <rect width="88" height="88" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>')
-[void]$sb.AppendLine('    <text x="44" y="28" fill="#39d353" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">L2</text>')
-[void]$sb.AppendLine('    <text x="44" y="44" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="8" text-anchor="middle">loss</text>')
-[void]$sb.AppendLine('    <text x="44" y="62" fill="#484f58" font-family="Segoe UI, Arial, sans-serif" font-size="7" text-anchor="middle">||z-hat - z||</text>')
-[void]$sb.AppendLine('    <text x="44" y="74" fill="#484f58" font-family="Segoe UI, Arial, sans-serif" font-size="7" text-anchor="middle">latent space</text>')
-[void]$sb.AppendLine('  </g>')
-[void]$sb.AppendLine('  <path d="M450 108 C470 108, 478 128, 490 140" stroke="#26a641" stroke-width="1.2" fill="none" stroke-dasharray="3 2"/>')
-[void]$sb.AppendLine('  <path d="M450 228 C470 228, 478 188, 490 170" stroke="#006d32" stroke-width="1.2" fill="none" stroke-dasharray="3 2"/>')
-
-# Right panel: semantic flow label + mini contribution calendar as "world model"
-[void]$sb.AppendLine('  <g transform="translate(610, 58)">')
-[void]$sb.AppendLine('    <text x="130" y="0" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="9" text-anchor="middle">Abstract prediction | no pixel decode</text>')
-for ($y = 0; $y -lt 7; $y++) {
-  for ($x = 0; $x -lt 26; $x++) {
-    if (($x - 8) * ($x - 8) + ($y - 3) * ($y - 3) -lt 18) {
-      $lvl = 2 + (($x + $y) % 3)
-    } elseif (($x - 18) * ($x - 18) + ($y - 5) * ($y - 5) -lt 8) {
-      $lvl = 3 + ($x % 2)
-    } elseif (($x + $y) % 5 -eq 0) {
-      $lvl = 1
-    } else {
-      $lvl = 0
-    }
-    $px = $x * ($cell + $gap); $py = 12 + $y * ($cell + $gap)
+  for ($x = 0; $x -lt 22; $x++) {
+    if (($x - 7) * ($x - 7) + ($y - 3) * ($y - 3) -lt 16) { $lvl = 2 + (($x + $y) % 3) }
+    elseif (($x - 16) * ($x - 16) + ($y - 5) * ($y - 5) -lt 8) { $lvl = 3 + ($x % 2) }
+    elseif (($x + $y) % 5 -eq 0) { $lvl = 1 }
+    else { $lvl = 0 }
+    $px = $x * ($cell + $gap); $py = $y * ($cell + $gap)
     $fill = $levels[[Math]::Min(4, [Math]::Max(0, [int]$lvl))]
     if ($lvl -gt 1) {
-      [void]$sb.AppendLine("    <rect x=`"$px`" y=`"$py`" width=`"$cell`" height=`"$cell`" rx=`"2`" fill=`"$fill`" stroke=`"#21262d`" stroke-width=`"0.5`"><animate attributeName=`"fill`" values=`"#0e4429;$fill;#39d353;$fill`" dur=`"2.5s`" begin=`"$([Math]::Round(($x+$y)*0.03,2))s`" repeatCount=`"indefinite`"/></rect>")
+      [void]$sb.AppendLine("    <rect x=`"$px`" y=`"$py`" width=`"$cell`" height=`"$cell`" rx=`"2`" fill=`"$fill`" stroke=`"$stroke`" stroke-width=`"0.5`"><animate attributeName=`"fill`" values=`"#2a1212;$fill;#ff2020;$fill`" dur=`"2.5s`" begin=`"$([Math]::Round(($x+$y)*0.03,2))s`" repeatCount=`"indefinite`"/></rect>")
     } else {
-      [void]$sb.AppendLine("    <rect x=`"$px`" y=`"$py`" width=`"$cell`" height=`"$cell`" rx=`"2`" fill=`"$fill`" stroke=`"#21262d`" stroke-width=`"0.5`"/>")
+      [void]$sb.AppendLine("    <rect x=`"$px`" y=`"$py`" width=`"$cell`" height=`"$cell`" rx=`"2`" fill=`"$fill`" stroke=`"$stroke`" stroke-width=`"0.5`"/>")
     }
   }
 }
-[void]$sb.AppendLine('    <text x="130" y="92" fill="#484f58" font-family="Segoe UI, Arial, sans-serif" font-size="8" text-anchor="middle">semantic target representation</text>')
 [void]$sb.AppendLine('  </g>')
+Add-Label $sb $colSemantic $rowStudentFoot "semantic target representation" "#484f58" 8
+
+# Student arrows
+$arrowY = $rowStudentGrid + 38
+[void]$sb.AppendLine("  <path d=`"M$([int]($colInput + $inputW / 2 + 4)) $arrowY H$($colCtx - 28)`" stroke=`"#ff2020`" stroke-width=`"1.5`" marker-end=`"url(#arr)`" fill=`"none`" opacity=`"0.85`"/>")
+[void]$sb.AppendLine("  <path d=`"M$($colCtx + 28) $arrowY H$($colPred - 38)`" stroke=`"#ff2020`" stroke-width=`"1.5`" marker-end=`"url(#arr)`" fill=`"none`" opacity=`"0.85`"/>")
+[void]$sb.AppendLine("  <path d=`"M$($colPred + 38) $arrowY H$($colZhat - 28)`" stroke=`"#ff2020`" stroke-width=`"1.5`" marker-end=`"url(#arr)`" fill=`"none`" opacity=`"0.85`"/>")
+[void]$sb.AppendLine("  <path d=`"M$($colZhat + 30) $($rowStudentGrid + 20) C$($colZhat + 50) $($rowStudentGrid + 10), $($colLoss - 20) $($rowStudentGrid + 10), $($colLoss - 36) $($rowStudentGrid + 28)`" stroke=`"#d41414`" stroke-width=`"1.2`" fill=`"none`" stroke-dasharray=`"3 2`"/>")
+
+# Divider + teacher path
+[void]$sb.AppendLine("  <line x1=`"20`" y1=`"$rowDivider`" x2=`"900`" y2=`"$rowDivider`" stroke=`"#21262d`" stroke-width=`"1`"/>")
+Add-Label $sb $colInput $rowTeacherLabel "Full image"
+Add-LabelGroup $sb $colCtx $rowTeacherLabel @("Target", "Encoder")
+Add-Label $sb $colZhat $rowTeacherLabel "z target"
+
+Add-Grid $sb ($colInput - $inputW / 2) $rowTeacherGrid 12 7 "input-full"
+Add-Grid $sb ($colCtx - 22) $rowTeacherGrid 5 10 "encoder" -levelOffset 1
+Add-Label $sb $colCtx $rowTeacherFoot "z_tgt" "#484f58" 7
+Add-Grid $sb ($colZhat - 22) $rowTeacherGrid 5 10 "latent-tgt"
+Add-Label $sb $colZhat $rowTeacherFoot "stop-grad" "#484f58" 7
+
+$teacherArrowY = $rowTeacherGrid + 38
+[void]$sb.AppendLine("  <path d=`"M$([int]($colInput + $inputW / 2 + 4)) $teacherArrowY H$($colCtx - 28)`" stroke=`"#484f58`" stroke-width=`"1.2`" marker-end=`"url(#arrDim)`" fill=`"none`" stroke-dasharray=`"4 3`"/>")
+[void]$sb.AppendLine("  <path d=`"M$($colCtx + 28) $teacherArrowY H$($colZhat - 28)`" stroke=`"#484f58`" stroke-width=`"1.2`" marker-end=`"url(#arrDim)`" fill=`"none`" stroke-dasharray=`"4 3`"/>")
+[void]$sb.AppendLine("  <path d=`"M$colCtx $ctxEncBottom H$emaX`" stroke=`"#7d8590`" stroke-width=`"1`" fill=`"none`" stroke-dasharray=`"4 3`"/>")
+[void]$sb.AppendLine("  <path d=`"M$emaX $ctxEncBottom V$tgtEncTop`" stroke=`"#7d8590`" stroke-width=`"1`" fill=`"none`" stroke-dasharray=`"4 3`" marker-end=`"url(#arrDim)`"/>")
+[void]$sb.AppendLine("  <path d=`"M$emaX $tgtEncTop H$colCtx`" stroke=`"#7d8590`" stroke-width=`"1`" fill=`"none`" stroke-dasharray=`"4 3`"/>")
+[void]$sb.AppendLine("  <text x=`"$($emaX - 8)`" y=`"$emaLabelY`" fill=`"#7d8590`" font-family=`"Segoe UI, Arial, sans-serif`" font-size=`"8`" text-anchor=`"end`">EMA</text>")
+
+[void]$sb.AppendLine("  <path d=`"M$($colZhat + 30) $($rowTeacherGrid + 20) C$($colZhat + 48) $($rowTeacherGrid + 8), $($colLoss - 18) $($rowStudentGrid + 58), $($colLoss - 36) $($rowStudentGrid + 52)`" stroke=`"#6b1515`" stroke-width=`"1.2`" fill=`"none`" stroke-dasharray=`"3 2`"/>")
+
+[void]$sb.AppendLine('  <circle r="3" fill="#ff2020"><animateMotion dur="3.5s" repeatCount="indefinite" path="M78 116 H430"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="3.5s" repeatCount="indefinite"/></circle>')
 
 # Legend
-[void]$sb.AppendLine('  <text x="720" y="268" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="9">Less</text>')
+Add-Label $sb 700 308 "Less" "#7d8590" 9
 for ($i = 0; $i -lt 5; $i++) {
-  [void]$sb.AppendLine("  <rect x=`"$([int](748 + $i * 14))`" y=`"258`" width=`"10`" height=`"10`" rx=`"2`" fill=`"$($levels[$i])`" stroke=`"#21262d`" stroke-width=`"0.5`"/>")
+  [void]$sb.AppendLine("  <rect x=`"$([int](728 + $i * 14))`" y=`"298`" width=`"10`" height=`"10`" rx=`"2`" fill=`"$($levels[$i])`" stroke=`"$stroke`" stroke-width=`"0.5`"/>")
 }
-[void]$sb.AppendLine('  <text x="830" y="268" fill="#7d8590" font-family="Segoe UI, Arial, sans-serif" font-size="9">More</text>')
+Add-Label $sb 810 308 "More" "#7d8590" 9
 
-# Animated flow dot
-[void]$sb.AppendLine('  <circle r="3" fill="#39d353"><animateMotion dur="3.5s" repeatCount="indefinite" path="M130 95 H420"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="3.5s" repeatCount="indefinite"/></circle>')
-
-[void]$sb.AppendLine('  <text x="460" y="292" fill="#484f58" font-family="Segoe UI, Arial, sans-serif" font-size="8" text-anchor="middle">visible context patches -> encode -> predict target embeddings | teacher path via EMA target encoder</text>')
 [void]$sb.AppendLine('</svg>')
 
 $content = $sb.ToString()
